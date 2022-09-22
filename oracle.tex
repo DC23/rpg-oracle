@@ -1,0 +1,134 @@
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[singlelinecheck=false]{caption}
+\usepackage{listings}
+\usepackage{shortvrb}
+\usepackage{stfloats}
+\usepackage{hyperref}
+
+\hypersetup{
+    pdfborderstyle={/S/U/W 1}, % underline links instead of boxes
+    linkbordercolor=red,       % color of internal links
+    citebordercolor=green,     % color of links to bibliography
+    filebordercolor=magenta,   % color of file links
+    urlbordercolor=brown        % color of external links
+}
+
+\captionsetup[table]{labelformat=empty,font={sf,sc,bf,},skip=0pt}
+\MakeShortVerb{|}
+
+\lstset{%
+  basicstyle=\ttfamily,
+  language=[LaTeX]{TeX},
+  breaklines=true,
+}
+
+% Metadata
+\title{The Oracle of Daniel}
+\date{September 2022\newline{}Version 0.1}
+% \author{Daniel}
+
+%----------------------------------------------------------------------------------
+% Front
+%----------------------------------------------------------------------------------
+\begin{document}
+% \frontmatter
+% \maketitle
+% \tableofcontents
+
+%----------------------------------------------------------------------------------
+% Main Content
+%----------------------------------------------------------------------------------
+\mainmatter
+\section{Oracles}
+\subsection{Chaos Factor}
+The Chaos Factor table and mechanic is from
+\href{https://aleaiactandaest.blogspot.com/p/downloads.html}{Morning Coffee Solo
+Variations}.
+
+Generally speaking, high chaos (here represented by a smaller die) means things
+are going badly for your PC. Low chaos means things are going well.
+
+In this system, the chaos factor influences the likelihood of scenes running as
+planned, as well as the likelihood of modifiers and random events on Yes/No
+questions.
+
+\begin{DndTable}[header=Chaos Factors]{X X}
+    \textbf{Chaos Factor} & \textbf{Chaos Die} \\
+    Boring$^a$ & d20\\
+    Under Control & d12\\
+    Average & d10\\
+    Out of Control & d8\\
+    Madness & d6\\
+    Abject Chaos$^a$ & d5$^b$\\
+    Plaything of the Gods$^a$ & d4\\
+\end{DndTable}
+\begin{scriptsize}
+\-\vspace{-3mm}\linebreak
+\-\hspace{3mm}$^a$ Optional chaos settings\linebreak
+\-\hspace{3mm}$^b$ Roll a d10 and divide by 2 rounding up\par
+\end{scriptsize}
+
+\subsection{Scene Setup}
+After setting up your scene, roll the chaos die against one of these tables to
+test your expectations. The first table only generates Interrupt and Altered scenes
+with similar frequencies to the \href{https://www.wordmillgames.com/mythic-gme.html}{Mythic system}. The second table adds complications
+and challenges from the \href{https://jeansenvaars.itch.io/plot-unfolding-machine}{Plot Unfolding Machine}.
+
+\begin{DndTable}[header=Mythic-style Expectation Checker]{x X}
+    \textbf{Chaos} & \textbf{Outcome} \\
+    1, 2 & Something else happens (interrupt)\\
+    3, 4 & Something is different (altered)\\
+    5+ & As expected
+\end{DndTable}
+\begin{DndTable}[header=PUM v2 Expectation Checker]{x X}
+    \textbf{Chaos} & \textbf{Outcome} \\
+    1 & Unexpected complication! Roll on PUM \emph{Scene Complication table}\\
+    2 & Something else happens (interrupt)\\
+    3 & Something is different (altered)\\
+    4 & Add a challenge. Roll on PUM \emph{Challenge Type} \& \emph{High Stakes} tables\\
+    5+ & As expected\\
+    10 & Even better
+\end{DndTable}
+\begin{DndTable}[header=PUM v3 Expectation Checker]{x X}
+    \textbf{Chaos} & \textbf{Outcome} \\
+    1 & \textbf{Subject} is \textbf{Revelation}\\
+    2 & Consider \textbf{Circumstance}\\
+    3 & The area is \textbf{Describe}\\
+    4 & \textbf{Who} shows up, and \textbf{Intent}\\
+    5+ & As expected\\
+    10 & And also \textbf{Goal}
+\end{DndTable}
+
+\subsection{Yes or No}
+Note that unlike Mythic, the chaos factor does not influence the odds
+of getting a yes or no. It only changes the chance of getting a modifier.
+
+First determine the odds of success, then roll a d6 and the chaos die.
+In the event that the chaos die is a d6, use different colours to tell the dice apart.
+\begin{DndTable}[header=Outcome (1d6)]{X X}
+    \textbf{Odds} & \textbf{Yes if} \\
+    Certain & 2+\\
+    Likely & 3+\\
+    50/50 & 4+\\
+    Unlikely & 5+\\
+    Doubtful & 6
+\end{DndTable}
+
+\begin{DndTable}[header=Qualifier]{X X}
+    \textbf{Chaos Die} & \textbf{Qualification} \\
+    1, 2 & Exceptional \\
+    3 & And ... something good\\
+    4 & But ... something bad\\
+    5+ & Unmodified\\
+    Oracle and Chaos die match & Random event
+\end{DndTable}
+
+\appendix
+
+%----------------------------------------------------------------------------------
+% Back
+%----------------------------------------------------------------------------------
+\backmatter
+
+\end{document}
