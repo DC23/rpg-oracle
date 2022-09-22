@@ -14,5 +14,5 @@ all:  oracle_a4.pdf oracle_letter.pdf
 .PHONY: clean
 clean:
 	echo Cleaning ...
-	rm -f *.gz *.aux *.log *.out *.bbl *.blg *.bak *.bcf *.xml *.toc *.pdf
+	rm -f *.gz *.aux *.log *.out *.bbl *.blg *.bak *.bcf *.xml *.toc
 	echo ... done
