@@ -1,4 +1,4 @@
-# Oracles for Solo RPG
+# Oracles for Solo RPGs
 
 A mashup of solo RPG oracle systems, drawing ideas from
 [Mythic](https://www.wordmillgames.com/mythic-gme.html), the [Plot Unfolding
