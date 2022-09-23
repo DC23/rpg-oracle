@@ -1,6 +1,6 @@
 # Oracles for Solo RPGs
 
-I have used the [Mythic](https://www.wordmillgames.com/mythic-gme.html) system,
+I have used the [Mythic](https://www.wordmillgames.com/mythic-gme.html) system
 for a long time. I love the creativity and modularity of that system, but I have
 always felt just a little unsatisfied with the way that the chaos factor changes
 the likelihood of getting a yes. Additionally, I wanted a system that was
