@@ -23,7 +23,7 @@ So here I have mashed up some ideas from Mythic, MCSV, and the excellent [Plot
 Unfolding Machine](https://jeansenvaars.itch.io/plot-unfolding-machine) (PUM),
 hopefully without infringing on the intellectual property of any of those.
 
-For scene setup, what PUM wonderfully calls *Expectation Checking*, both Mythic
+For scene setup, which PUM wonderfully calls *Expectation Checking*, both Mythic
 and MCSV stick with the options of *interrupt scenes*, *altered scenes*, and *as
 expected*. PUM adds a number of other interesting outcomes which I have drawn on
 to add three different scene setup tables. You will need a copy of PUM to use
