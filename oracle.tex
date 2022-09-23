@@ -1,15 +1,21 @@
 \input{header}
 
 % Metadata
-\title{Mythic, PUM, \& MCSV Mashup}
-\date{September 2022\newline{}Version 1.2.2}
+\title{
+\Huge{Ginger Tea Solo Variations}
+\\ \small{A \emph{Mythic}, \emph{Morning Coffee Solo Variations}, \& \emph{Plot Unfolding Machine} Mashup}
+}
+\date{September 2022\newline{}Version 1.3.0}
+\author{Daniel}
 
 %----------------------------------------------------------------------------------
 % Front
 %----------------------------------------------------------------------------------
 \begin{document}
-% \frontmatter
-% \maketitle
+\frontmatter
+\maketitle
+
+I don't know why this page is blank either. \LaTeX{} is a strange beast sometimes.
 % \tableofcontents
 
 %----------------------------------------------------------------------------------
@@ -21,7 +27,8 @@
 % Section: Introduction
 %----------------------------------------------------------------------------------
 \section{Introduction}
-I have used the \href{https://www.wordmillgames.com/mythic-gme.html}{Mythic}
+\DndDropCapLine{I}{have used the
+\href{https://www.wordmillgames.com/mythic-gme.html}{Mythic}}
 system for a long time. I love the creativity and modularity of that system,
 but I have always felt just a little unsatisfied with the way that the chaos
 factor changes the likelihood of getting a yes. Additionally, I wanted a system
@@ -106,7 +113,7 @@ Machine} to use the two PUM tables. This is particularly the case for the
 \emph{PUM v3} table.
 \end{DndComment}
 
-\begin{DndTable}[header=Mythic]{x X}
+\begin{DndTable}[header=Mythic]{c X}
     \textbf{Chaos} & \textbf{Outcome} \\
     $1, 2$ & Interrupt\\
     $3, 4$ & Altered\\
@@ -114,7 +121,7 @@ Machine} to use the two PUM tables. This is particularly the case for the
 \end{DndTable}
 % \\ \newpage
 
-\begin{DndTable}[header=Mythic \& PUM v2]{x X}
+\begin{DndTable}[header=Mythic \& PUM v2]{c X}
     \textbf{Chaos} & \textbf{Outcome} \\
     $1$ & Unexpected complication$^a$\\
     $2$ & Interrupt\\
@@ -132,7 +139,7 @@ tables, add a skill challenge, or somehow make the scene more challenging.\lineb
 \-\hspace{0mm}$^c$Similar to the \emph{PC Positive} events in Mythic.\par
 \end{scriptsize}
 
-\begin{DndTable}[header=PUM v3]{x X}
+\begin{DndTable}[header=PUM v3]{c X}
     \textbf{Chaos} & \textbf{Outcome} \\
     $1$ & \textbf{\emph{Subject}} is \textbf{\emph{Revelation}}\\
     $2$ & Consider \textbf{\emph{Circumstance}}\\
@@ -212,7 +219,7 @@ In the event that the chaos die is a d6, use different colors to tell the dice a
 \subsection{Probabilities of Different Scene Outcomes for each Chaos Die}
 
 % Mythic table
-\begin{DndTable}[header=Mythic Scene Setup Table]{X x x x x x x}
+\begin{DndTable}[header=Mythic Scene Setup Table]{X c c c c c c}
     \textbf{Outcome} & \textbf{d4} & \textbf{d6} & \textbf{d8} & \textbf{d10} & \textbf{d12} & \textbf{d20}\\
     Interrupt        & $50\%$      & $33\%$      & $25\%$        & $20\%$         & $17\%$         & $10\%$\\
     Altered          & $50\%$      & $33\%$      & $25\%$        & $20\%$         & $17\%$         & $10\%$\\
@@ -220,7 +227,7 @@ In the event that the chaos die is a d6, use different colors to tell the dice a
 \end{DndTable}
 
 % Mythic & PUM v2
-\begin{DndTable}[header=Mythic \& PUM v2 Scene Setup Table]{X x x x x x x}
+\begin{DndTable}[header=Mythic \& PUM v2 Scene Setup Table]{X c c c c c c}
     \textbf{Outcome}        & \textbf{d4} & \textbf{d6} & \textbf{d8} & \textbf{d10} & \textbf{d12} & \textbf{d20}\\
     Unexpected complication & $25\%$        & $17\%$        & $12\%$      & $10\%$         & $8\%$         & $5\%$\\
     Interrupt               & $25\%$        & $17\%$        & $12\%$      & $10\%$         & $8\%$         & $5\%$\\
@@ -232,7 +239,7 @@ In the event that the chaos die is a d6, use different colors to tell the dice a
 
     % & $\%$        & $\%$        & $\%$        & $\%$         & $\%$         & $\%$\\
 % PUM v3
-\begin{DndTable}[header=PUM v3 Scene Setup Table]{X x x x x x x}
+\begin{DndTable}[header=PUM v3 Scene Setup Table]{X c c c c c c}
     \textbf{Outcome}        & \textbf{d4} & \textbf{d6} & \textbf{d8} & \textbf{d10} & \textbf{d12} & \textbf{d20}\\
     Subject is ...          & $25\%$        & $17\%$        & $12\%$      & $10\%$         & $8\%$         & $5\%$\\
     Consider ...            & $25\%$        & $17\%$        & $12\%$      & $10\%$         & $8\%$         & $5\%$\\
