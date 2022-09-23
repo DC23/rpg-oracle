@@ -1,0 +1,261 @@
+\input{header}
+
+% Metadata
+\title{
+\Huge{Ginger Tea Solo Variations}
+\\ \small{A \emph{Mythic}, \emph{Morning Coffee Solo Variations}, \& \emph{Plot Unfolding Machine} Mashup}
+}
+\date{September 2022\newline{}Version 1.3.0}
+\author{Daniel}
+
+%----------------------------------------------------------------------------------
+% Front
+%----------------------------------------------------------------------------------
+\begin{document}
+\frontmatter
+\maketitle
+
+% \tableofcontents
+
+%----------------------------------------------------------------------------------
+% Main Content
+%----------------------------------------------------------------------------------
+\mainmatter
+
+%----------------------------------------------------------------------------------
+% Section: Introduction
+%----------------------------------------------------------------------------------
+\section{Introduction}
+\DndDropCapLine{I}{have used the
+\href{https://www.wordmillgames.com/mythic-gme.html}{Mythic}}
+system for a long time. I love the creativity and modularity of that system,
+but I have always felt just a little unsatisfied with the way that the chaos
+factor changes the likelihood of getting a yes. Additionally, I wanted a system
+that was simpler to use, with less reliance on modifiers, multiple dice, and
+tracking of numeric chaos factors.
+
+\href{https://aleaiactandaest.blogspot.com/p/downloads.html}{Morning Coffee Solo
+Variations} (MCSV) comes very close to what I wanted. Rather than a moving chaos
+factor and modifiers, it has an elegant system of chaos dice. When the chaos
+factor changes, move the chaos die up or down a step from d4 to d20. The chaotic
+outcomes for scene setup and Yes/No questions use fixed numbers for each result.
+This makes the outcomes easier to remember. However, MCSV just gives the
+\emph{and ...}, \emph{but ...}, and \emph{random event} modifiers for Yes/No
+questions. I always liked the \emph{exceptional} results in Mythic, so I have
+modified the qualification table to add \emph{exceptional} as an option.
+
+So I mashed up some ideas from Mythic, MCSV, and the excellent
+\href{https://jeansenvaars.itch.io/plot-unfolding-machine}{Plot Unfolding
+Machine} (PUM), hopefully without infringing on the intellectual property of any
+of those.
+
+For scene setup, which PUM wonderfully calls \emph{Expectation Checking}, both
+Mythic and MCSV stick with the options of \emph{interrupt scenes}, \emph{altered
+scenes}, and \emph{as expected}. PUM adds a number of other interesting outcomes
+which I have drawn on to add three different scene setup tables. You will need a
+copy of PUM to fully use those tables
+
+In the spirit of Morning Coffee Solo Variations, I have called this Mashup the
+\emph{Ginger Tea Solo Variations} (GTSV), since I was drinking ginger tea at least some
+of the time while working on this.
+
+%----------------------------------------------------------------------------------
+% Section: Oracles
+%----------------------------------------------------------------------------------
+\section{Oracles}
+\subsection{Chaos Factor}
+The Chaos Factor table and mechanic is from
+\href{https://aleaiactandaest.blogspot.com/p/downloads.html}{Morning Coffee Solo
+Variations}.
+
+Generally speaking, high chaos (here represented by a smaller die) means things
+are going badly for your PC. Low chaos means things are going well.
+
+In this system, the chaos factor influences the likelihood of scenes running as
+planned, as well as the likelihood of modifiers and random events on Yes/No
+questions. Unlike Mythic, it does not change the likelihood of getting a yes or a no.
+
+\begin{DndTable}[header=Chaos Factors]{X X}
+    \textbf{Chaos Factor} & \textbf{Chaos Die} \\
+    Boring$^a$ & d20\\
+    Under Control & d12\\
+    Average & d10\\
+    Out of Control & d8\\
+    Madness & d6\\
+    Abject Chaos$^a$ & d5$^b$\\
+    Plaything of the Gods$^a$ & d4\\
+\end{DndTable}
+\begin{scriptsize}
+\-\vspace{-3mm}\linebreak
+\-\hspace{0mm}$^a$ Optional chaos settings\linebreak
+\-\hspace{0mm}$^b$ Roll a d10 and divide by 2, rounding up\par
+\end{scriptsize}
+
+\subsection{Scene Setup}
+After setting up your scene, roll the chaos die against one of these tables to
+test your expectations.
+\begin{itemize}
+\item \emph{Mythic} generates Interrupt and Altered scenes with similar
+frequencies to the \href{https://www.wordmillgames.com/mythic-gme.html}{Mythic
+system}.
+\item \emph{Mythic \& PUM v2} adds complications and challenges from the
+\href{https://jeansenvaars.itch.io/plot-unfolding-machine}{Plot Unfolding
+Machine} v2 to the Mythic altered and interrupt scenes.
+\item \emph{PUM v3} generates outcomes from Plot Unfolding Machine v3. This is
+the least Mythic-like option.
+\end{itemize}
+\begin{DndComment}{}
+You will need a copy of the
+\href{https://jeansenvaars.itch.io/plot-unfolding-machine}{Plot Unfolding
+Machine} to use the two PUM tables. This is particularly the case for the
+\emph{PUM v3} table.
+\end{DndComment}
+
+\begin{DndTable}[header=Mythic]{c X}
+    \textbf{Chaos} & \textbf{Outcome} \\
+    $1, 2$ & Interrupt\\
+    $3, 4$ & Altered\\
+    $5+$ & As expected
+\end{DndTable}
+% \\ \newpage
+
+\begin{DndTable}[header=Mythic \& PUM v2]{c X}
+    \textbf{Chaos} & \textbf{Outcome} \\
+    $1$ & Unexpected complication$^a$\\
+    $2$ & Interrupt\\
+    $3$ & Altered\\
+    $4$ & More challenging$^b$\\
+    $5-11$ & As expected\\
+    $12+$ & Even better$^c$\\
+\end{DndTable}
+\begin{scriptsize}
+\-\vspace{-4mm}\linebreak
+\-\hspace{0mm}$^a$ Roll on PUM \emph{Scene Complication table}, consult Mythic
+detail tables, or otherwise add complications.\linebreak
+\-\hspace{0mm}$^b$ Roll on PUM \emph{Challenge Type} \& \emph{High Stakes}
+tables, add a skill challenge, or somehow make the scene more challenging.\linebreak
+\-\hspace{0mm}$^c$Similar to the \emph{PC Positive} events in Mythic.\par
+\end{scriptsize}
+
+\begin{DndTable}[header=PUM v3]{c X}
+    \textbf{Chaos} & \textbf{Outcome} \\
+    $1$ & \textbf{\emph{Subject}} is \textbf{\emph{Revelation}}\\
+    $2$ & Consider \textbf{\emph{Circumstance}}\\
+    $3$ & The area is \textbf{\emph{Describe}}\\
+    $4$ & \textbf{\emph{Who}} shows up, and \textbf{\emph{Intent}}\\
+    $5-11$ & As expected\\
+    $12+$ & And also \textbf{\emph{Goal}}
+\end{DndTable}
+\begin{scriptsize}
+\-\vspace{-5mm}\linebreak
+\-\hspace{2mm}\textbf{\emph{Bold and italicized}} items indicate the tables to roll in PUM v3.
+\end{scriptsize}
+
+\subsection{Yes or No}
+First determine the odds of success, then roll a d6 and the chaos die.
+In the event that the chaos die is a d6, use different colors to tell the dice apart.
+\begin{DndTable}[header=Outcome (1d6)]{X X}
+    \textbf{Odds} & \textbf{Yes if} \\
+    Certain & $2+$\\
+    Likely & $3+$\\
+    Unsure & $4+$\\
+    Unlikely & $5+$\\
+    Doubtful & $6$
+\end{DndTable}
+
+\begin{DndTable}[header=Qualifier]{X X}
+    \textbf{Chaos Die} & \textbf{Qualification} \\
+    $1, 2$ & Exceptional \\
+    $3$ & And ... something good\\
+    $4$ & But ... something bad\\
+    $5+$ & Unmodified\\
+    Oracle and Chaos die match & Random event
+\end{DndTable}
+
+\appendix
+%----------------------------------------------------------------------------------
+% Comparison of probabilities
+%----------------------------------------------------------------------------------
+\chapter{Probabilities}
+\section{Yes/No Oracle}
+
+% Mythic
+\begin{DndTable}[header=Probability of Yes in \emph{Mythic Variations 2 Fate Check} at Chaos Factor 5]{X X}
+    \textbf{Odds} & \textbf{Probability of Yes} \\
+    Impossible & $3\%$\\
+    No way & $10\%$\\
+    Very unlikely & $21\%$\\
+    Unlikely & $36\%$\\
+    Unsure & $55\%$\\
+    Likely & $72\%$\\
+    Very likely & $85\%$\\
+    Sure thing & $94\%$\\
+    Has to be & $99\%$\\
+\end{DndTable}
+
+% Oracle Mash
+\begin{DndTable}[header=Probability of Yes in GTSV]{X X}
+    \textbf{Odds} & \textbf{Probability of Yes} \\
+    Doubtful & $17\%$\\
+    Unlikely & $33\%$\\
+    Unsure & $50\%$\\
+    Likely & $67\%$\\
+    Certain & $83\%$\\
+\end{DndTable}
+
+% Closest Named Probabilities
+\begin{DndTable}[header=Closest Equivalent Named Probabilities Based on Chance of a Yes]{X X}
+    \textbf{Mythic Fate Check} & \textbf{GTSV} \\
+    Very unlikely ($21\%$)& Doubtful ($17\%$)\\
+    Unlikely ($36\%$) & Unlikely ($33\%$)\\
+    Unsure ($55\%$) & Unsure ($50\%$)\\
+    Likely ($72\%$) & Likely ($67\%$)\\
+    Very likely ($85\%$) & Certain ($83\%$)\\
+\end{DndTable}
+
+\section{Scene Setup}
+\subsection{Probabilities of Different Scene Outcomes for each Chaos Die}
+
+% Mythic table
+\begin{DndTable}[header=Mythic Scene Setup Table]{X c c c c c c}
+    \textbf{Outcome} & \textbf{d4} & \textbf{d6} & \textbf{d8} & \textbf{d10} & \textbf{d12} & \textbf{d20}\\
+    Interrupt        & $50\%$      & $33\%$      & $25\%$        & $20\%$         & $17\%$         & $10\%$\\
+    Altered          & $50\%$      & $33\%$      & $25\%$        & $20\%$         & $17\%$         & $10\%$\\
+    As expected      & $0\%$       & $33\%$      & $50\%$        & $60\%$         & $67\%$         & $80\%$\\
+\end{DndTable}
+
+% Mythic & PUM v2
+\begin{DndTable}[header=Mythic \& PUM v2 Scene Setup Table]{X c c c c c c}
+    \textbf{Outcome}        & \textbf{d4} & \textbf{d6} & \textbf{d8} & \textbf{d10} & \textbf{d12} & \textbf{d20}\\
+    Unexpected complication & $25\%$        & $17\%$        & $12\%$      & $10\%$         & $8\%$         & $5\%$\\
+    Interrupt               & $25\%$        & $17\%$        & $12\%$      & $10\%$         & $8\%$         & $5\%$\\
+    Altered                 & $25\%$        & $17\%$        & $12\%$      & $10\%$         & $8\%$         & $5\%$\\
+    More challenging        & $25\%$        & $17\%$        & $12\%$      & $10\%$         & $8\%$         & $5\%$\\
+    As expected             & $0\%$         & $33\%$        & $50\%$      & $60\%$         & $58\%$        & $35\%$\\
+    Even better             & $0\%$         & $0\%$         & $0\%$       & $0\%$          & $8\%$         & $45\%$\\
+\end{DndTable}
+
+    % & $\%$        & $\%$        & $\%$        & $\%$         & $\%$         & $\%$\\
+% PUM v3
+\begin{DndTable}[header=PUM v3 Scene Setup Table]{X c c c c c c}
+    \textbf{Outcome}        & \textbf{d4} & \textbf{d6} & \textbf{d8} & \textbf{d10} & \textbf{d12} & \textbf{d20}\\
+    Subject is ...          & $25\%$        & $17\%$        & $12\%$      & $10\%$         & $8\%$         & $5\%$\\
+    Consider ...            & $25\%$        & $17\%$        & $12\%$      & $10\%$         & $8\%$         & $5\%$\\
+    The area is ...         & $25\%$        & $17\%$        & $12\%$      & $10\%$         & $8\%$         & $5\%$\\
+    Who shows ...           & $25\%$        & $17\%$        & $12\%$      & $10\%$         & $8\%$         & $5\%$\\
+    As expected             & $0\%$         & $33\%$        & $50\%$      & $60\%$         & $58\%$        & $35\%$\\
+    And also goal           & $0\%$         & $0\%$         & $0\%$       & $0\%$          & $8\%$         & $45\%$\\
+\end{DndTable}
+
+% \begin{DndTable}[header=This System: Scene Setup Probabilities]{X X X X X X X}
+%     \textbf{} & \textbf{d4} & \textbf{d6} & \textbf{d8} & \textbf{d10} & \textbf{d12} & \textbf{d20}\\
+
+
+% \end{DndTable}
+
+%----------------------------------------------------------------------------------
+% Back
+%----------------------------------------------------------------------------------
+\backmatter
+
+\end{document}

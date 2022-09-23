@@ -1,4 +1,6 @@
-# Oracles for Solo RPGs
+# Ginger Tea Solo Variations
+
+## Oracles for Solo RPGs
 
 I have used the [Mythic](https://www.wordmillgames.com/mythic-gme.html) system
 for a long time. I love the creativity and modularity of that system, but I have
@@ -29,13 +31,10 @@ expected*. PUM adds a number of other interesting outcomes which I have drawn on
 to add three different scene setup tables. You will need a copy of PUM to use
 the PUM v3 table.
 
-I may add additional oracle tables as inspiration and whim strike, but I have
-nothing planned right now.
-
 ## A Shout-Out to DnD 5e LaTeX Template
 
 Formatting in the style of the fifth edition of the *world's greatest
 roleplaying game* courtesy of the lovely [DnD 5e LaTeX
 Template](https://github.com/rpgtex/DND-5e-LaTeX-Template).
 
-![Preview image of the first page from the PDF](./pg_1_preview.jpg)
+![Preview image of the first page from the PDF](./preview.jpg)
