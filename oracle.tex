@@ -24,9 +24,8 @@
 }
 
 % Metadata
-\title{The Oracle of Daniel}
-\date{September 2022\newline{}Version 0.1}
-% \author{Daniel}
+\title{Mythic, PUM, \& MCSV Mashup}
+\date{September 2022\newline{}Version 1.0}
 
 %----------------------------------------------------------------------------------
 % Front
@@ -51,7 +50,7 @@ are going badly for your PC. Low chaos means things are going well.
 
 In this system, the chaos factor influences the likelihood of scenes running as
 planned, as well as the likelihood of modifiers and random events on Yes/No
-questions.
+questions. Unlike Mythic, it does not change the likelihood of getting a yes or a no.
 
 \begin{DndTable}[header=Chaos Factors]{X X}
     \textbf{Chaos Factor} & \textbf{Chaos Die} \\
@@ -65,8 +64,8 @@ questions.
 \end{DndTable}
 \begin{scriptsize}
 \-\vspace{-3mm}\linebreak
-\-\hspace{3mm}$^a$ Optional chaos settings\linebreak
-\-\hspace{3mm}$^b$ Roll a d10 and divide by 2, rounding up\par
+\-\hspace{0mm}$^a$ Optional chaos settings\linebreak
+\-\hspace{0mm}$^b$ Roll a d10 and divide by 2, rounding up\par
 \end{scriptsize}
 
 \subsection{Scene Setup}
@@ -82,38 +81,56 @@ Machine} v2 to the Mythic altered and interrupt scenes.
 \item \emph{PUM v3} generates outcomes from Plot Unfolding Machine v3. This is
 the least Mythic-like option.
 \end{itemize}
+\begin{DndComment}{}
+You will need a copy of the
+\href{https://jeansenvaars.itch.io/plot-unfolding-machine}{Plot Unfolding
+Machine} to use the two PUM tables. This is particularly the case for the
+\emph{PUM v3} table.
+\end{DndComment}
 
 \begin{DndTable}[header=Mythic]{x X}
     \textbf{Chaos} & \textbf{Outcome} \\
-    1, 2 & Something else happens (interrupt)\\
-    3, 4 & Something is different (altered)\\
+    1, 2 & Interrupt\\
+    3, 4 & Altered\\
     5+ & As expected
 \end{DndTable}
+\\ \newpage
+
 \begin{DndTable}[header=Mythic \& PUM v2]{x X}
     \textbf{Chaos} & \textbf{Outcome} \\
-    1 & Unexpected complication! Roll on PUM \emph{Scene Complication table}\\
-    2 & Something else happens (interrupt)\\
-    3 & Something is different (altered)\\
-    4 & Add a challenge. Roll on PUM \emph{Challenge Type} \& \emph{High Stakes} tables\\
-    5+ & As expected\\
-    10 & Even better
+    1 & Unexpected complication$^a$\\
+    2 & Interrupt\\
+    3 & Altered\\
+    4 & More challenging$^b$\\
+    5-11 & As expected\\
+    12+ & Even better$^c$\\
 \end{DndTable}
+\begin{scriptsize}
+\-\vspace{-4mm}\linebreak
+\-\hspace{0mm}$^a$ Roll on PUM \emph{Scene Complication table}, consult Mythic
+detail tables, or otherwise add complications.\linebreak
+\-\hspace{0mm}$^b$ Roll on PUM \emph{Challenge Type} \& \emph{High Stakes}
+tables, add a skill challenge, or somehow make the scene more challenging.\linebreak
+\-\hspace{0mm}$^c$Similar to the \emph{PC Positive} events in Mythic.\par
+\end{scriptsize}
+
 \begin{DndTable}[header=PUM v3]{x X}
     \textbf{Chaos} & \textbf{Outcome} \\
-    1 & \textbf{Subject} is \textbf{Revelation}\\
-    2 & Consider \textbf{Circumstance}\\
-    3 & The area is \textbf{Describe}\\
-    4 & \textbf{Who} shows up, and \textbf{Intent}\\
+    1 & \textbf{\emph{Subject}} is \textbf{\emph{Revelation}}\\
+    2 & Consider \textbf{\emph{Circumstance}}\\
+    3 & The area is \textbf{\emph{Describe}}\\
+    4 & \textbf{\emph{Who}} shows up, and \textbf{\emph{Intent}}\\
     5+ & As expected\\
-    10 & And also \textbf{Goal}
+    12+ & And also \textbf{\emph{Goal}}
 \end{DndTable}
+\begin{scriptsize}
+\-\vspace{-5mm}\linebreak
+\-\hspace{2mm}\textbf{\emph{Bold and italicized}} items indicate the tables to roll in PUM v3.
+\end{scriptsize}
 
 \subsection{Yes or No}
-Note that unlike Mythic, the chaos factor does not influence the odds
-of getting a yes or no. It only changes the chance of getting a modifier.
-
 First determine the odds of success, then roll a d6 and the chaos die.
-In the event that the chaos die is a d6, use different colours to tell the dice apart.
+In the event that the chaos die is a d6, use different colors to tell the dice apart.
 \begin{DndTable}[header=Outcome (1d6)]{X X}
     \textbf{Odds} & \textbf{Yes if} \\
     Certain & 2+\\
