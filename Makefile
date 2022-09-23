@@ -11,7 +11,7 @@ LETTER_PRINT_CMD=$(TEX) -jobname=oracle_letter_print "\documentclass[bg=print, 1
 .SILENT:
 .IGNORE:
 
-all:  a4 a4_print letter letter_print
+all:  a4 a4_print letter letter_print preview
 
 a4: oracle.tex
 	$(A4_CMD)
@@ -29,9 +29,9 @@ letter_print: oracle.tex
 	$(LETTER_PRINT_CMD)
 	$(LETTER_PRINT_CMD)
 
-preview: letter
-	pdftoppm -jpeg -rx 80 -ry 80 -f 1 -l 1 oracle_letter.pdf pg_1_preview
-	mv pg_1_preview-1.jpg pg_1_preview.jpg
+preview: oracle_letter.pdf
+	pdftoppm -jpeg -rx 80 -ry 80 -f 3 -l 3 oracle_letter.pdf preview
+	mv preview-3.jpg preview.jpg
 
 .PHONY: clean
 clean:

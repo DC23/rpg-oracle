@@ -38,4 +38,4 @@ Formatting in the style of the fifth edition of the *world's greatest
 roleplaying game* courtesy of the lovely [DnD 5e LaTeX
 Template](https://github.com/rpgtex/DND-5e-LaTeX-Template).
 
-![Preview image of the first page from the PDF](./pg_1_preview.jpg)
+![Preview image of the first page from the PDF](./preview.jpg)
