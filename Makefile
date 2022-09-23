@@ -29,6 +29,10 @@ letter_print: oracle.tex
 	$(LETTER_PRINT_CMD)
 	$(LETTER_PRINT_CMD)
 
+preview: letter
+	pdftoppm -jpeg -rx 80 -ry 80 -f 1 -l 1 oracle_letter.pdf pg_1_preview
+	mv pg_1_preview-1.jpg pg_1_preview.jpg
+
 .PHONY: clean
 clean:
 	echo Cleaning ...
