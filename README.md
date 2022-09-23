@@ -14,7 +14,7 @@ tracked, and that provides a moving target for interpretation during rolls, it
 has an elegant system of chaos dice. When the chaos factor changes, move the
 chaos die up or down a step from d4 to d20. The chaotic outcomes for scene setup
 and Yes/No questions use fixed numbers for each result. This makes the outcomes
-easier to remember over time. However, MCSV just gives the *and ...*, *but ...*,
+easier to remember. However, MCSV just gives the *and ...*, *but ...*,
 and *random event* modifiers for Yes/No questions. I always liked the
 *exceptional* results in Mythic, so I have modified the qualification table to
 add *exceptional* as an option.
@@ -35,7 +35,7 @@ nothing planned right now.
 ## A Shout-Out to DnD 5e LaTeX Template
 
 Formatting in the style of the fifth edition of the *world's greatest
-roleplaying game* courtesy of the wonderful [DnD 5e LaTeX
+roleplaying game* courtesy of the lovely [DnD 5e LaTeX
 Template](https://github.com/rpgtex/DND-5e-LaTeX-Template).
 
 ![Preview image of the first page from the PDF](./pg_1_preview.jpg)
