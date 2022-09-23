@@ -1,6 +1,7 @@
 \usepackage[english]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage[singlelinecheck=false]{caption}
+\usepackage{lipsum}
 \usepackage{listings}
 \usepackage{shortvrb}
 \usepackage{stfloats}
@@ -25,7 +26,7 @@
 
 % Metadata
 \title{Mythic, PUM, \& MCSV Mashup}
-\date{September 2022\newline{}Version 1.0}
+\date{September 2022\newline{}Version 1.1}
 
 %----------------------------------------------------------------------------------
 % Front
@@ -39,6 +40,41 @@
 % Main Content
 %----------------------------------------------------------------------------------
 \mainmatter
+\section{Introduction}
+I have used the \href{https://www.wordmillgames.com/mythic-gme.html}{Mythic}
+system for a long time. I love the creativity and modularity of that system,
+but I have always felt just a little unsatisfied with the way that the chaos
+factor changes the likelihood of getting a yes. Additionally, I wanted a system
+that was simpler to use, with less reliance on modifiers, multiple dice, and
+tracking of numeric chaos factors.
+
+\href{https://aleaiactandaest.blogspot.com/p/downloads.html}{Morning Coffee Solo
+Variations} (MCSV) comes very close to what I wanted. Rather than a chaos factor
+that needs to be tracked, and that provides a moving target for interpretation
+during rolls, it has an elegant system of chaos dice. When the chaos factor
+changes, move the chaos die up or down a step from d4 to d20. The chaotic
+outcomes for scene setup and Yes/No questions use fixed numbers for each result.
+This makes the outcomes easier to remember. However, MCSV just gives the
+\emph{and ...}, \emph{but ...}, and \emph{random event} modifiers for Yes/No
+questions. I always liked the \emph{exceptional} results in Mythic, so I have
+modified the qualification table to add \emph{exceptional} as an option.
+
+So here I have mashed up some ideas from Mythic, MCSV, and the excellent
+\href{https://jeansenvaars.itch.io/plot-unfolding-machine}{Plot Unfolding
+Machine} (PUM), hopefully without infringing on the intellectual property of any
+of those.
+
+For scene setup, what PUM wonderfully calls \emph{Expectation Checking}, both
+Mythic and MCSV stick with the options of \emph{interrupt scenes}, \emph{altered
+scenes}, and \emph{as expected}. PUM adds a number of other interesting outcomes
+which I have drawn on to add three different scene setup tables. You will need a
+copy of PUM to use the PUM v3 table.
+
+\begin{DndReadAloud}
+I may add additional oracle tables as inspiration and whim strike, but I have
+nothing planned right now.
+\end{DndReadAloud}
+
 \section{Oracles}
 \subsection{Chaos Factor}
 The Chaos Factor table and mechanic is from
@@ -94,7 +130,7 @@ Machine} to use the two PUM tables. This is particularly the case for the
     3, 4 & Altered\\
     5+ & As expected
 \end{DndTable}
-\\ \newpage
+% \\ \newpage
 
 \begin{DndTable}[header=Mythic \& PUM v2]{x X}
     \textbf{Chaos} & \textbf{Outcome} \\
