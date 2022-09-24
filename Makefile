@@ -2,6 +2,7 @@ SHELL=/bin/sh
 TEX_COMPILER=pdflatex
 TEX_OPTIONS=--interaction=nonstopmode
 TEX=$(TEX_COMPILER) $(TEX_OPTIONS)
+TEX_FILES=$(wildcard *.tex)
 
 A4_CMD=$(TEX) -jobname=gtsv_a4 "\documentclass[bg=full, 10pt, a4paper, twoside, twocolumn, openany, nodeprecatedcode]{dndbook} \input{gtsv}"
 A4_PRINT_CMD=$(TEX) -jobname=gtsv_a4_print "\documentclass[bg=print, 10pt, a4paper, twoside, twocolumn, openany, nodeprecatedcode]{dndbook} \input{gtsv}"
@@ -13,19 +14,19 @@ LETTER_PRINT_CMD=$(TEX) -jobname=gtsv_letter_print "\documentclass[bg=print, 10p
 
 all:  a4 a4_print letter letter_print preview
 
-a4: gtsv.tex
+a4: $(TEX_FILES)
 	$(A4_CMD)
 	$(A4_CMD)
 
-a4_print: gtsv.tex
+a4_print: $(TEX_FILES)
 	$(A4_PRINT_CMD)
 	$(A4_PRINT_CMD)
 
-letter: gtsv.tex
+letter: $(TEX_FILES)
 	$(LETTER_CMD)
 	$(LETTER_CMD)
 
-letter_print: gtsv.tex
+letter_print: $(TEX_FILES)
 	$(LETTER_PRINT_CMD)
 	$(LETTER_PRINT_CMD)
 

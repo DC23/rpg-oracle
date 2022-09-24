@@ -84,21 +84,7 @@ planned, as well as the likelihood of modifiers and random events on Yes/No
 questions. Unlike Mythic, it does not change the likelihood of getting a yes or
 a no.
 
-\begin{DndTable}[header=Chaos Factors]{X X}
-    \textbf{Chaos Factor} & \textbf{Chaos Die} \\
-    Boring$^a$ & d20\\
-    Under Control & d12\\
-    Average & d10\\
-    Out of Control & d8\\
-    Madness & d6\\
-    Abject Chaos$^a$ & d5$^b$\\
-    Plaything of the Gods$^a$ & d4\\
-\end{DndTable}
-\begin{scriptsize}
-\-\vspace{-3mm}\linebreak
-\-\hspace{0mm}$^a$ Optional chaos settings\linebreak
-\-\hspace{0mm}$^b$ Roll a d10 and divide by 2, rounding up\par
-\end{scriptsize}
+\input{chaos_die_table}
 
 \subsection{Scene Setup}
 After setting up your scene, roll the chaos die against one of these tables to
@@ -120,66 +106,14 @@ Machine} to use the two PUM tables. This is particularly the case for the
 \emph{PUM v3} table.
 \end{DndComment}
 
-\begin{DndTable}[header=Table 1: Classic]{c X}
-    \textbf{Chaos} & \textbf{Outcome} \\
-    $1, 2$ & Interrupt\\
-    $3, 4$ & Altered\\
-    $5+$ & As expected
-\end{DndTable}
-% \\ \newpage
-
-\begin{DndTable}[header=Table 2: Mythic \& PUM v2]{c X}
-    \textbf{Chaos} & \textbf{Outcome} \\
-    $1$ & Unexpected complication$^a$\\
-    $2$ & Interrupt\\
-    $3$ & Altered\\
-    $4$ & More challenging$^b$\\
-    $5-11$ & As expected\\
-    $12+$ & Even better$^c$\\
-\end{DndTable}
-\begin{scriptsize}
-\-\vspace{-4mm}\linebreak
-\-\hspace{0mm}$^a$ Roll on PUM \emph{Scene Complication table}, consult Mythic
-detail tables, or otherwise add complications.\linebreak
-\-\hspace{0mm}$^b$ Roll on PUM \emph{Challenge Type} \& \emph{High Stakes}
-tables, add a skill challenge, or somehow make the scene more challenging.\linebreak
-\-\hspace{0mm}$^c$Similar to the \emph{PC Positive} events in Mythic.\par
-\end{scriptsize}
-
-\begin{DndTable}[header=Table 3: PUM v3]{c X}
-    \textbf{Chaos} & \textbf{Outcome} \\
-    $1$ & \textbf{\emph{Subject}} is \textbf{\emph{Revelation}}\\
-    $2$ & Consider \textbf{\emph{Circumstance}}\\
-    $3$ & The area is \textbf{\emph{Describe}}\\
-    $4$ & \textbf{\emph{Who}} shows up, and \textbf{\emph{Intent}}\\
-    $5-11$ & As expected\\
-    $12+$ & And also \textbf{\emph{Goal}}
-\end{DndTable}
-\begin{scriptsize}
-\-\vspace{-5mm}\linebreak
-\-\hspace{2mm}\textbf{\emph{Bold and italicized}} items indicate the tables to roll in PUM v3.
-\end{scriptsize}
+\input{scene_setup_table_1}
+\input{scene_setup_table_2}
+\input{scene_setup_table_3}
 
 \subsection{Yes or No}
-First determine the odds of success, then roll a d6 and the chaos die.
-In the event that the chaos die is a d6, use different colors to tell the dice apart.
-\begin{DndTable}[header=Outcome (1d6)]{X X}
-    \textbf{Odds} & \textbf{Yes if} \\
-    Certain & $2+$\\
-    Likely & $3+$\\
-    Unsure & $4+$\\
-    Unlikely & $5+$\\
-    Doubtful & $6$
-\end{DndTable}
-
-\begin{DndTable}[header=Qualifier]{X X}
-    \textbf{Chaos Die} & \textbf{Qualification} \\
-    $1$ & Exceptional \\
-    $2$ & And ... something good\\
-    $3$ & But ... something bad\\
-    $4+$ & Unmodified\\
-    Oracle and Chaos die match & Random event
-\end{DndTable}
+First determine the odds of success, then roll a d6 and the chaos die. In the
+event that the chaos die is a d6, use different colors to tell the dice apart.
+\input{yes_no_oracle}
 
 \appendix
 %----------------------------------------------------------------------------------
@@ -189,12 +123,13 @@ In the event that the chaos die is a d6, use different colors to tell the dice a
 \onecolumn
 \chapter{Probabilities}
 \begin{DndComment}{A note on formatting}
-Yes, I know the formatting is all over the place in this section.
-Some of the probability tables are too wide for the two-column
-layout, but I can't seem to get the DnD 5e \LaTeX template tables
-to play nicely with one-column layouts. I'm sure I can sort it out
-with some work, and maybe I will do that one day. But for now ...
+Yes, I know the formatting is all over the place in this section. Some of the
+probability tables are too wide for the two-column layout, but I can't seem to
+get the DnD 5e \LaTeX template tables to play nicely with one-column layouts.
+I'm sure I can sort it out with some work, and maybe I will do that one day. But
+for now ...
 \end{DndComment}
+
 \section{Yes/No Oracle}
 \subsection{Chance of a Yes}
 These tables show that within the range of \emph{doubtful} to \emph{certain}
