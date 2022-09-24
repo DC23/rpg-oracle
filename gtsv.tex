@@ -181,6 +181,9 @@ In the event that the chaos die is a d6, use different colors to tell the dice a
 \chapter{Probabilities}
 \section{Yes/No Oracle}
 \subsection{Chance of a Yes}
+These tables show that within the range of \emph{doubtful} to \emph{certain}
+(Mythic \emph{very unlikely} to \emph{likely}), the GTSV Yes/No oracle has
+roughly similar outcomes.
 
 % Mythic
 \begin{DndTable}[header=\emph{Mythic Variations 2 Fate Check}\\at Chaos Factor 5]{l c}
@@ -207,7 +210,7 @@ In the event that the chaos die is a d6, use different colors to tell the dice a
 \end{DndTable}
 
 % Closest Named Probabilities
-\begin{DndTable}[header=Closest Equivalent Named Probabilities]{l c}
+\begin{DndTable}[header=Closest Equivalent Named Probabilities]{l l}
     \textbf{Mythic Fate Check} & \textbf{GTSV} \\
     Very unlikely ($21\%$)& Doubtful ($17\%$)\\
     Unlikely ($36\%$) & Unlikely ($33\%$)\\
@@ -217,6 +220,11 @@ In the event that the chaos die is a d6, use different colors to tell the dice a
 \end{DndTable}
 
 \subsection{Chance of a Modifier}
+Note that the current version of GTSV gives much higher chances of oracle
+modifiers. Also note that in GTSV, random events can occur independently of
+other modifiers, further increasing the chance that something other than a
+straight yes or no answer will be obtained.
+
 In all tables the highest chaos factor is on the left, decreasing towards the
 lowest setting on the right.
 
@@ -241,8 +249,23 @@ lowest setting on the right.
 \section{Scene Setup}
 \subsection{GTSV Scene Outcomes}
 
-% Mythic table
-\begin{DndTable}[header=Classic (Mythic) Scene Setup Table]{X c c c c c c c}
+Note that I am primarily comparing to the newer Mythic Variations II Fate Check.
+In this system, the chaos factor only varies between 3 and 6.
+
+If the d6 Chaos Die is equated to Chaos Factor 6, through to d12 equating to
+Chaos Factor 3, then as with the Yes/No answer chances, the odds of particular
+outcomes are roughly similar.
+
+% Mythic odds
+\begin{DndTable}[header=Mythic GME Scene Setup Probabilities]{l c c c c}
+    \textbf{Modifier} & \textbf{Chaos 6} & \textbf{Chaos 5} & \textbf{Chaos 4} & \textbf{Chaos 3}\\
+    Interrupt             & $30\%$           & $ 20\%$             & $ 20\%$               & $ 10\%$  \\
+    Altered               & $30\%$           & $ 30\%$             & $ 20\%$               & $ 10\%$  \\
+    Unmodified            & $40\%$           & $ 50\%$             & $ 60\%$               & $ 70\%$  \\
+\end{DndTable}
+
+% Classic table
+\begin{DndTable}[header=GTSV Classic (Mythic) Scene Setup Table]{l c c c c c c c}
     \textbf{Outcome} & \textbf{d4} & \textbf{d5} & \textbf{d6} & \textbf{d8} & \textbf{d10} & \textbf{d12} & \textbf{d20}\\
     Interrupt        & $50\%$      & $40\%$        & $33\%$      & $25\%$        & $20\%$         & $17\%$         & $10\%$\\
     Altered          & $50\%$      & $40\%$        & $33\%$      & $25\%$        & $20\%$         & $17\%$         & $10\%$\\
@@ -250,7 +273,7 @@ lowest setting on the right.
 \end{DndTable}
 
 % Mythic & PUM v2
-\begin{DndTable}[header=Mythic \& PUM v2 Scene Setup Table]{X c c c c c c c}
+\begin{DndTable}[header=Mythic \& PUM v2 Scene Setup Table]{l c c c c c c c}
     \textbf{Outcome}        & \textbf{d4} & \textbf{d5} & \textbf{d6} & \textbf{d8} & \textbf{d10} & \textbf{d12} & \textbf{d20}\\
     Unexpected complication & $25\%$        & $20\%$        & $17\%$        & $12\%$      & $10\%$         & $8\%$         & $5\%$\\
     Interrupt               & $25\%$        & $20\%$        & $17\%$        & $12\%$      & $10\%$         & $8\%$         & $5\%$\\
@@ -261,7 +284,7 @@ lowest setting on the right.
 \end{DndTable}
 
 % PUM v3
-\begin{DndTable}[header=PUM v3 Scene Setup Table]{X c c c c c c c}
+\begin{DndTable}[header=PUM v3 Scene Setup Table]{l c c c c c c c}
     \textbf{Outcome}        & \textbf{d4} & \textbf{d5} & \textbf{d6} & \textbf{d8} & \textbf{d10} & \textbf{d12} & \textbf{d20}\\
     Subject is Revelation   & $25\%$        & $20\%$        & $17\%$        & $12\%$      & $10\%$         & $8\%$         & $5\%$\\
     Consider Circumstance   & $25\%$        & $20\%$        & $17\%$        & $12\%$      & $10\%$         & $8\%$         & $5\%$\\
