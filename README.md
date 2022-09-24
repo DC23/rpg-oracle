@@ -31,6 +31,14 @@ expected*. PUM adds a number of other interesting outcomes which I have drawn on
 to add three different scene setup tables. You will need a copy of PUM to use
 the PUM v3 table.
 
+## Getting The Files
+
+The *gtsv_\** files contain the PDF versions of the full system in all combinations
+of A4, letter, full-colour, and print-friendly versions.
+
+The *gtsv_essential_tables_\** files contain just the essential system tables without
+any of the explanatory text. Hopefully perfect for printing as a reference.
+
 ## A Shout-Out to DnD 5e LaTeX Template
 
 Formatting in the style of the fifth edition of the *world's greatest
