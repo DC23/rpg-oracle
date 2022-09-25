@@ -5,16 +5,14 @@
 \Huge{Ginger Tea Solo Variations}
 \\ \small{A \emph{Mythic}, \emph{Morning Coffee Solo Variations}, \& \emph{Plot Unfolding Machine} Mashup}
 }
-\date{September 2022\newline{}Version 2.2.0}
-\author{Daniel}
+\input{date_author}
 
 %----------------------------------------------------------------------------------
 % Front
 %----------------------------------------------------------------------------------
 \begin{document}
 \frontmatter
-\maketitle
-
+% \maketitle
 % \tableofcontents
 
 %----------------------------------------------------------------------------------
@@ -22,6 +20,7 @@
 %----------------------------------------------------------------------------------
 \mainmatter
 
+\chapter*{Ginger Tea Solo Variations \version}
 %----------------------------------------------------------------------------------
 % Section: Introduction
 %----------------------------------------------------------------------------------
@@ -102,39 +101,37 @@ the least Mythic-like option.
 \begin{DndComment}{}
 You will need a copy of the
 \href{https://jeansenvaars.itch.io/plot-unfolding-machine}{Plot~Unfolding~
-Machine} to use the tables 2 and 3.
+Machine} to use tables 2 and 3.
 \end{DndComment}
 
 \input{scene_setup_table_1}
+\clearfloat
+\newpage
 \input{scene_setup_table_2}
 \input{scene_setup_table_3}
 
+\clearfloat
+\newpage
 \subsection{Yes or No}
-First determine the odds of success, then roll a d6 and the chaos die. In the
-event that the chaos die is a d6, use different colors to tell the dice apart.
 \input{yes_no_oracle}
 \appendix
 
 %----------------------------------------------------------------------------------
 % Comparison of probabilities
 %----------------------------------------------------------------------------------
+\onecolumn
 \chapter{Probabilities}
-% \begin{DndComment}{A note on formatting}
-% Yes, I know the formatting is all over the place in this section. Some of the
-% probability tables are too wide for the two-column layout, but I can't seem to
-% get the DnD 5e \LaTeX template tables to play nicely with one-column layouts.
-% I'm sure I can sort it out with some work, and maybe I will do that one day. But
-% for now ...
-% \end{DndComment}
-
 \section{Yes/No Oracle}
 \subsection{Chance of a Yes}
 These tables show that within the range of \emph{doubtful} to \emph{certain}
 (Mythic \emph{very unlikely} to \emph{likely}), the GTSV Yes/No oracle has
 roughly similar outcomes.
 
+\begin{multicols}{2}
+\clearfloat
+\vspace*{\fill}
 % Mythic
-\begin{DndTable}[header=\emph{Mythic Variations 2 Fate Check}\\at Chaos Factor 5]{X X}
+\begin{DndTable}[header=\emph{Mythic Variations 2 Fate Check}\\at Chaos Factor 5]{X c}
     \textbf{Odds} & \textbf{Chance of Yes} \\
     Impossible & $3\%$ \\
     No way & $10\%$ \\
@@ -148,7 +145,7 @@ roughly similar outcomes.
 \end{DndTable}
 
 % GTSV
-\begin{DndTable}[header=GTSV]{X X}
+\begin{DndTable}[header=GTSV]{X c}
     \textbf{Odds} & \textbf{Chance of Yes} \\
     Doubtful & $17\%$ \\
     Unlikely & $33\%$ \\
@@ -158,7 +155,7 @@ roughly similar outcomes.
 \end{DndTable}
 
 % Closest Named Probabilities
-\begin{DndTable}[header=Closest Equivalent Named Probabilities]{X X}
+\begin{DndTable}[header=Closest Equivalent Named Probabilities]{X l}
     \textbf{Mythic Fate Check} & \textbf{GTSV} \\
     Very unlikely ($21\%$)& Doubtful ($17\%$)\\
     Unlikely ($36\%$) & Unlikely ($33\%$)\\
@@ -166,6 +163,7 @@ roughly similar outcomes.
     Likely ($72\%$) & Likely ($67\%$)\\
     Very likely ($85\%$) & Certain ($83\%$)\\
 \end{DndTable}
+\end{multicols}
 
 \subsection{Chance of a Modifier}
 Note that the current version of GTSV gives much higher chances of oracle
@@ -192,7 +190,7 @@ is very similar between Mythic and GTSV.
         exceptional} outcome with chaos die d8.
         \item In MCSV and GTSV, random events occur independently of other outcomes.
         The chance of the four main outcomes totals $100\%$ while the random events
-        have their own separate pool. They occur or not in combination with one often
+        have their own separate pool. They occur or not in combination with one of
         the four main outcomes.
         \item The \emph{Total Random Event Chance} in the GTSV table is the
         total chance of any random event happening at all. This is the sum of
@@ -201,7 +199,7 @@ is very similar between Mythic and GTSV.
 \end{DndComment}
 
 
-\begin{DndTable}[header=\emph{Mythic Variations 2 Fate Check}]{X c c c c}
+\begin{DndTable}[header=\emph{Mythic Variations 2 Fate Check}]{l c c c c}
     \textbf{Modifier} & \textbf{Chaos 6} & \textbf{Chaos 5} & \textbf{Chaos 4} & \textbf{Chaos 3}\\
     Unmodified              & $ 64\%$          & $ 70\%$             & $ 76\%$               & $ 82\%$  \\
     Exceptional             & $15\%$           & $ 12\%$             & $ 10\%$               & $  8\%$  \\
@@ -209,32 +207,19 @@ is very similar between Mythic and GTSV.
     Exceptional \& Random   & $ 6\%$           & $ 5\%$              & $ 4\%$                & $ 3\%$  \\
 \end{DndTable}
 
-% Yuk, I hate having to manually force the line breaks in this table, but it's the only
-% way to pack it into the column width
-\begin{DndTable}[header=GTSV]{X c c c c c c c}
+\begin{DndTable}[header=GTSV]{l c c c c c c c}
     \textbf{Modifier} & \textbf{d4} & \textbf{d5} & \textbf{d6} & \textbf{d8} & \textbf{d10} & \textbf{d12} & \textbf{d20}\\
-    Unmod-
-    ified               & $25\%$      & $40\%$       & $50\%$       & $62\%$       & $70\%$        & $75\%$        & $85\%$\\
-    Excep-
-    tional              & $25\%$      & $20\%$       & $17\%$       & $12\%$       & $10\%$        & $ 8\%$        & $ 5\%$\\
-    And ...             & $25\%$      & $20\%$       & $17\%$       & $12\%$       & $10\%$        & $8\%$         & $5\%$\\
-    But ...             & $25\%$      & $20\%$       & $17\%$       & $12\%$       & $10\%$        & $8\%$         & $5\%$\\
-    Total Random
-    Event Chance        & $17\%$      & $17\%$       & $17\%$       & $12\%$       & $10\%$        & $8\%$         & $5\%$\\
-    Random
-    \& Excep-
-    tional              & $ 4\%$      & $ 3\%$       & $ 3\%$       & $ 2\%$       & $ 2\%$        & $1\%$         & $1\%$\\
-    Random
-    \&~And...           & $ 4\%$      & $ 3\%$       & $ 3\%$       & $ 2\%$       & $ 2\%$        & $1\%$         & $1\%$\\
-    Random
-    \&~But...           & $ 4\%$      & $ 3\%$       & $ 3\%$       & $ 2\%$       & $ 2\%$        & $1\%$         & $1\%$\\
-    Random
-    \&~Unm-
-    odified             & $ 4\%$      & $ 7\%$       & $ 8\%$       & $ 6\%$       & $ 5\%$        & $4\%$         & $2\%$\\
+    Unmodified              & $25\%$      & $40\%$       & $50\%$       & $62\%$       & $70\%$        & $75\%$        & $85\%$\\
+    Exceptional             & $25\%$      & $20\%$       & $17\%$       & $12\%$       & $10\%$        & $ 8\%$        & $ 5\%$\\
+    And ...                 & $25\%$      & $20\%$       & $17\%$       & $12\%$       & $10\%$        & $8\%$         & $5\%$\\
+    But ...                 & $25\%$      & $20\%$       & $17\%$       & $12\%$       & $10\%$        & $8\%$         & $5\%$\\
+    Total Random Event Chance& $17\%$      & $17\%$       & $17\%$       & $12\%$       & $10\%$        & $8\%$         & $5\%$\\
+    Random \& Exceptional   & $ 4\%$      & $ 3\%$       & $ 3\%$       & $ 2\%$       & $ 2\%$        & $1\%$         & $1\%$\\
+    Random \&~And...        & $ 4\%$      & $ 3\%$       & $ 3\%$       & $ 2\%$       & $ 2\%$        & $1\%$         & $1\%$\\
+    Random \&~But...        & $ 4\%$      & $ 3\%$       & $ 3\%$       & $ 2\%$       & $ 2\%$        & $1\%$         & $1\%$\\
+    Random \&~Unmodified    & $ 4\%$      & $ 7\%$       & $ 8\%$       & $ 6\%$       & $ 5\%$        & $4\%$         & $2\%$\\
 \end{DndTable}
 
-\clearpage
-\pagebreak
 \section{Scene Setup}
 \subsection{GTSV Scene Outcomes}
 
@@ -247,7 +232,7 @@ roughly similar when comparing Mythic and GTSV. They are not as close as with
 the Yes/No oracle, but they are close enough to feel similar in play.
 
 % Mythic odds
-\begin{DndTable}[header=Mythic GME Scene Setup Probabilities]{X c c c c}
+\begin{DndTable}[header=Mythic GME Scene Setup Probabilities]{l c c c c}
     \textbf{Modifier} & \textbf{Chaos 6} & \textbf{Chaos 5} & \textbf{Chaos 4} & \textbf{Chaos 3}\\
     Interrupt             & $30\%$           & $ 20\%$             & $ 20\%$               & $ 10\%$  \\
     Altered               & $30\%$           & $ 30\%$             & $ 20\%$               & $ 20\%$  \\
@@ -255,23 +240,27 @@ the Yes/No oracle, but they are close enough to feel similar in play.
 \end{DndTable}
 
 % Classic table
-\begin{DndTable}[header=Table 1: GTSV Classic (Mythic) Scene Setup]{X c c c c c c c}
+\begin{DndTable}[header=Table 1: GTSV Classic (Mythic) Scene Setup]{l c c c c c c c}
     \textbf{Outcome} & \textbf{d4} & \textbf{d5} & \textbf{d6} & \textbf{d8} & \textbf{d10} & \textbf{d12} & \textbf{d20}\\
     Interrupt        & $50\%$      & $40\%$        & $33\%$      & $25\%$        & $20\%$         & $17\%$         & $10\%$\\
     Altered          & $50\%$      & $40\%$        & $33\%$      & $25\%$        & $20\%$         & $17\%$         & $10\%$\\
-    As expected      & $0\%$       & $20\%$        & $33\%$      & $50\%$        & $60\%$         & $67\%$         & $80\%$\\
+    Unmodified       & $0\%$       & $20\%$        & $33\%$      & $50\%$        & $60\%$         & $67\%$         & $80\%$\\
 \end{DndTable}
 
 The following two tables can't really be compared to the previous results, since
-the number of possible scene variation outcomes is much larger.
+the number of possible scene variation outcomes is much larger. However, the
+general trend of reduced complications and increased good outcomes is seen as
+chaos moves from high to low.
 
 % Mythic & PUM v2
 \begin{DndTable}[header=Table 2: Mythic \& PUM v2 Scene Setup]{l c c c c c c c}
     \textbf{Outcome}        & \textbf{d4} & \textbf{d5} & \textbf{d6} & \textbf{d8} & \textbf{d10} & \textbf{d12} & \textbf{d20}\\
-    Unexpected complication & $25\%$        & $20\%$        & $17\%$        & $12\%$      & $10\%$         & $8\%$         & $5\%$\\
+    Unexpected
+    complication & $25\%$        & $20\%$        & $17\%$        & $12\%$      & $10\%$         & $8\%$         & $5\%$\\
     Interrupt               & $25\%$        & $20\%$        & $17\%$        & $12\%$      & $10\%$         & $8\%$         & $5\%$\\
     Altered                 & $25\%$        & $20\%$        & $17\%$        & $12\%$      & $10\%$         & $8\%$         & $5\%$\\
-    More challenging        & $25\%$        & $20\%$        & $17\%$        & $12\%$      & $10\%$         & $8\%$         & $5\%$\\
+    More
+    challenging        & $25\%$        & $20\%$        & $17\%$        & $12\%$      & $10\%$         & $8\%$         & $5\%$\\
     As expected             & $0\%$         & $20\%$        & $33\%$        & $50\%$      & $60\%$         & $58\%$        & $35\%$\\
     Even better             & $0\%$         & $0\%$         & $0\%$         & $0\%$       & $0\%$          & $8\%$         & $45\%$\\
 \end{DndTable}
