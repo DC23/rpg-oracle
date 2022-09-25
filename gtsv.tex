@@ -118,16 +118,14 @@ event that the chaos die is a d6, use different colors to tell the dice apart.
 %----------------------------------------------------------------------------------
 % Comparison of probabilities
 %----------------------------------------------------------------------------------
-% The tables in this chapter are too wide for two columns
-\onecolumn
 \chapter{Probabilities}
-\begin{DndComment}{A note on formatting}
-Yes, I know the formatting is all over the place in this section. Some of the
-probability tables are too wide for the two-column layout, but I can't seem to
-get the DnD 5e \LaTeX template tables to play nicely with one-column layouts.
-I'm sure I can sort it out with some work, and maybe I will do that one day. But
-for now ...
-\end{DndComment}
+% \begin{DndComment}{A note on formatting}
+% Yes, I know the formatting is all over the place in this section. Some of the
+% probability tables are too wide for the two-column layout, but I can't seem to
+% get the DnD 5e \LaTeX template tables to play nicely with one-column layouts.
+% I'm sure I can sort it out with some work, and maybe I will do that one day. But
+% for now ...
+% \end{DndComment}
 
 \section{Yes/No Oracle}
 \subsection{Chance of a Yes}
@@ -136,7 +134,7 @@ These tables show that within the range of \emph{doubtful} to \emph{certain}
 roughly similar outcomes.
 
 % Mythic
-\begin{DndTable}[header=\emph{Mythic Variations 2 Fate Check}\\at Chaos Factor 5]{l c}
+\begin{DndTable}[header=\emph{Mythic Variations 2 Fate Check}\\at Chaos Factor 5]{X X}
     \textbf{Odds} & \textbf{Chance of Yes} \\
     Impossible & $3\%$ \\
     No way & $10\%$ \\
@@ -150,7 +148,7 @@ roughly similar outcomes.
 \end{DndTable}
 
 % GTSV
-\begin{DndTable}[header=GTSV]{l c}
+\begin{DndTable}[header=GTSV]{X X}
     \textbf{Odds} & \textbf{Chance of Yes} \\
     Doubtful & $17\%$ \\
     Unlikely & $33\%$ \\
@@ -160,7 +158,7 @@ roughly similar outcomes.
 \end{DndTable}
 
 % Closest Named Probabilities
-\begin{DndTable}[header=Closest Equivalent Named Probabilities]{l l}
+\begin{DndTable}[header=Closest Equivalent Named Probabilities]{X X}
     \textbf{Mythic Fate Check} & \textbf{GTSV} \\
     Very unlikely ($21\%$)& Doubtful ($17\%$)\\
     Unlikely ($36\%$) & Unlikely ($33\%$)\\
@@ -203,7 +201,7 @@ is very similar between Mythic and GTSV.
 \end{DndComment}
 
 
-\begin{DndTable}[header=\emph{Mythic Variations 2 Fate Check}]{l c c c c}
+\begin{DndTable}[header=\emph{Mythic Variations 2 Fate Check}]{X c c c c}
     \textbf{Modifier} & \textbf{Chaos 6} & \textbf{Chaos 5} & \textbf{Chaos 4} & \textbf{Chaos 3}\\
     Unmodified              & $ 64\%$          & $ 70\%$             & $ 76\%$               & $ 82\%$  \\
     Exceptional             & $15\%$           & $ 12\%$             & $ 10\%$               & $  8\%$  \\
@@ -211,24 +209,31 @@ is very similar between Mythic and GTSV.
     Exceptional \& Random   & $ 6\%$           & $ 5\%$              & $ 4\%$                & $ 3\%$  \\
 \end{DndTable}
 
-\begin{DndTable}[header=GTSV]{l c c c c c c c}
+% Yuk, I hate having to manually force the line breaks in this table, but it's the only
+% way to pack it into the column width
+\begin{DndTable}[header=GTSV]{X c c c c c c c}
     \textbf{Modifier} & \textbf{d4} & \textbf{d5} & \textbf{d6} & \textbf{d8} & \textbf{d10} & \textbf{d12} & \textbf{d20}\\
-    Unmodified          & $25\%$      & $40\%$       & $50\%$       & $62\%$       & $70\%$        & $75\%$        & $85\%$\\
-    Exceptional         & $25\%$      & $20\%$       & $17\%$       & $12\%$       & $10\%$        & $ 8\%$        & $ 5\%$\\
+    Unmod-
+    ified               & $25\%$      & $40\%$       & $50\%$       & $62\%$       & $70\%$        & $75\%$        & $85\%$\\
+    Excep-
+    tional              & $25\%$      & $20\%$       & $17\%$       & $12\%$       & $10\%$        & $ 8\%$        & $ 5\%$\\
     And ...             & $25\%$      & $20\%$       & $17\%$       & $12\%$       & $10\%$        & $8\%$         & $5\%$\\
     But ...             & $25\%$      & $20\%$       & $17\%$       & $12\%$       & $10\%$        & $8\%$         & $5\%$\\
     Total Random
     Event Chance        & $17\%$      & $17\%$       & $17\%$       & $12\%$       & $10\%$        & $8\%$         & $5\%$\\
-    Random \&
-    Exceptional         & $ 4\%$      & $ 3\%$       & $ 3\%$       & $ 2\%$       & $ 2\%$        & $1\%$         & $1\%$\\
-    Random \&
-    And ...             & $ 4\%$      & $ 3\%$       & $ 3\%$       & $ 2\%$       & $ 2\%$        & $1\%$         & $1\%$\\
-    Random \&
-    But ...             & $ 4\%$      & $ 3\%$       & $ 3\%$       & $ 2\%$       & $ 2\%$        & $1\%$         & $1\%$\\
-    Random \&
-    Unmodified          & $ 4\%$      & $ 7\%$       & $ 8\%$       & $ 6\%$       & $ 5\%$        & $4\%$         & $2\%$\\
+    Random
+    \& Excep-
+    tional              & $ 4\%$      & $ 3\%$       & $ 3\%$       & $ 2\%$       & $ 2\%$        & $1\%$         & $1\%$\\
+    Random
+    \&~And...           & $ 4\%$      & $ 3\%$       & $ 3\%$       & $ 2\%$       & $ 2\%$        & $1\%$         & $1\%$\\
+    Random
+    \&~But...           & $ 4\%$      & $ 3\%$       & $ 3\%$       & $ 2\%$       & $ 2\%$        & $1\%$         & $1\%$\\
+    Random
+    \&~Unm-
+    odified             & $ 4\%$      & $ 7\%$       & $ 8\%$       & $ 6\%$       & $ 5\%$        & $4\%$         & $2\%$\\
 \end{DndTable}
 
+% \pagebreak
 \section{Scene Setup}
 \subsection{GTSV Scene Outcomes}
 
