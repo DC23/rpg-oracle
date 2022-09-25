@@ -5,7 +5,7 @@
 \Huge{Ginger Tea Solo Variations}
 \\ \small{A \emph{Mythic}, \emph{Morning Coffee Solo Variations}, \& \emph{Plot Unfolding Machine} Mashup}
 }
-\date{September 2022\newline{}Version 2.1.1}
+\date{September 2022\newline{}Version 2.2.0}
 \author{Daniel}
 
 %----------------------------------------------------------------------------------
@@ -53,7 +53,7 @@ I also like some ideas in the excellent
 \href{https://jeansenvaars.itch.io/plot-unfolding-machine}{Plot~Unfolding~
 Machine} (PUM), so I have incorporated a few of those here, but in a way that
 only works for people who also have a copy of PUM. My tables direct you to look
-up additional results in the PUM tables. These are all options, so this system
+up additional results in the PUM tables. These are all optional, so this system
 can work without PUM as well. Just don't use those optional scene alteration
 tables (tables 2 and 3).
 
@@ -101,9 +101,8 @@ the least Mythic-like option.
 \end{itemize}
 \begin{DndComment}{}
 You will need a copy of the
-\href{https://jeansenvaars.itch.io/plot-unfolding-machine}{Plot Unfolding
-Machine} to use the two PUM tables. This is particularly the case for the
-\emph{PUM v3} table.
+\href{https://jeansenvaars.itch.io/plot-unfolding-machine}{Plot~Unfolding~
+Machine} to use the tables 2 and 3.
 \end{DndComment}
 
 \input{scene_setup_table_1}
@@ -114,8 +113,8 @@ Machine} to use the two PUM tables. This is particularly the case for the
 First determine the odds of success, then roll a d6 and the chaos die. In the
 event that the chaos die is a d6, use different colors to tell the dice apart.
 \input{yes_no_oracle}
-
 \appendix
+
 %----------------------------------------------------------------------------------
 % Comparison of probabilities
 %----------------------------------------------------------------------------------
@@ -183,21 +182,51 @@ As with the chance of a yes, the chance of answer modification within the range 
 \emph{doubtful} to \emph{certain} (Mythic \emph{very unlikely} to \emph{likely})
 is very similar between Mythic and GTSV.
 
+\begin{DndComment}{A Note on Column Totals}
+    In these tables, adding all percentages in a column should total to 100\%
+    since this is the total chance of anything happening at all. In some cases
+    it may appear that the total is not 100\%. There are a few reasons for this:
+    \begin{itemize}
+        \item I have rounded the fractional results to whole numbers. Rounding
+        errors then make it appear as though things don't quite add up. The
+        software I use to calculate these results gives the precise fractional
+        odds. For example there is a $1/48$ chance of a \emph{random \&
+        exceptional} outcome with chaos die d8.
+        \item In MCSV and GTSV, random events occur independently of other outcomes.
+        The chance of the four main outcomes totals $100\%$ while the random events
+        have their own separate pool. They occur or not in combination with one often
+        the four main outcomes.
+        \item The \emph{Total Random Event Chance} in the GTSV table is the
+        total chance of any random event happening at all. This is the sum of
+        all the separate random event combinations.
+    \end{itemize}
+\end{DndComment}
+
+
 \begin{DndTable}[header=\emph{Mythic Variations 2 Fate Check}]{l c c c c}
     \textbf{Modifier} & \textbf{Chaos 6} & \textbf{Chaos 5} & \textbf{Chaos 4} & \textbf{Chaos 3}\\
-    Exceptional             & $15\%$           & $ 12\%$             & $ 10\%$               & $  8\%$  \\
-    Random                  & $15\%$           & $ 12\%$             & $ 10\%$               & $  8\%$  \\
-    Exceptional \& Random   & $ 6\%$           & $ 5\%$              & $ 4\%$                & $ 3\%$  \\
     Unmodified              & $ 64\%$          & $ 70\%$             & $ 76\%$               & $ 82\%$  \\
+    Exceptional             & $15\%$           & $ 12\%$             & $ 10\%$               & $  8\%$  \\
+    Random \& Unmodified    & $15\%$           & $ 12\%$             & $ 10\%$               & $  8\%$  \\
+    Exceptional \& Random   & $ 6\%$           & $ 5\%$              & $ 4\%$                & $ 3\%$  \\
 \end{DndTable}
 
 \begin{DndTable}[header=GTSV]{l c c c c c c c}
     \textbf{Modifier} & \textbf{d4} & \textbf{d5} & \textbf{d6} & \textbf{d8} & \textbf{d10} & \textbf{d12} & \textbf{d20}\\
-    Exceptional         & $25\%$      & $20\%$       & $17\%$       & $12\%$       & $10\%$        & $ 8\%$        & $ 5\%$\\
-    Random Event        & $17\%$      & $17\%$       & $17\%$       & $12\%$       & $10\%$        & $8\%$         & $5\%$\\
     Unmodified          & $25\%$      & $40\%$       & $50\%$       & $62\%$       & $70\%$        & $75\%$        & $85\%$\\
+    Exceptional         & $25\%$      & $20\%$       & $17\%$       & $12\%$       & $10\%$        & $ 8\%$        & $ 5\%$\\
     And ...             & $25\%$      & $20\%$       & $17\%$       & $12\%$       & $10\%$        & $8\%$         & $5\%$\\
     But ...             & $25\%$      & $20\%$       & $17\%$       & $12\%$       & $10\%$        & $8\%$         & $5\%$\\
+    Total Random
+    Event Chance        & $17\%$      & $17\%$       & $17\%$       & $12\%$       & $10\%$        & $8\%$         & $5\%$\\
+    Random \&
+    Exceptional         & $ 4\%$      & $ 3\%$       & $ 3\%$       & $ 2\%$       & $ 2\%$        & $1\%$         & $1\%$\\
+    Random \&
+    And ...             & $ 4\%$      & $ 3\%$       & $ 3\%$       & $ 2\%$       & $ 2\%$        & $1\%$         & $1\%$\\
+    Random \&
+    But ...             & $ 4\%$      & $ 3\%$       & $ 3\%$       & $ 2\%$       & $ 2\%$        & $1\%$         & $1\%$\\
+    Random \&
+    Unmodified          & $ 4\%$      & $ 7\%$       & $ 8\%$       & $ 6\%$       & $ 5\%$        & $4\%$         & $2\%$\\
 \end{DndTable}
 
 \section{Scene Setup}
