@@ -1,11 +1,9 @@
 \input{header}
 
-% Metadata
 \title{
 \Huge{Ginger Tea Solo Variations}
 \\ \small{A \emph{Mythic}, \emph{Morning Coffee Solo Variations}, \& \emph{Plot Unfolding Machine} Mashup}
 }
-\input{date_author}
 
 %----------------------------------------------------------------------------------
 % Front
@@ -88,31 +86,43 @@ a no.
 \subsection{Scene Setup}
 After setting up your scene, roll the chaos die against one of these tables to
 test your expectations.
-\begin{itemize}
-\item The \emph{Classic} table generates Interrupt and Altered scenes with similar
-frequencies to the \href{https://www.wordmillgames.com/mythic-gme.html}{Mythic
-system}.
-\item \emph{Mythic \& PUM v2} adds complications and challenges from the
-\href{https://jeansenvaars.itch.io/plot-unfolding-machine}{Plot Unfolding
-Machine} v2 to the Mythic altered and interrupt scenes.
-\item \emph{PUM v3} generates outcomes from Plot Unfolding Machine v3. This is
-the least Mythic-like option.
-\end{itemize}
 \begin{DndComment}{}
 You will need a copy of the
 \href{https://jeansenvaars.itch.io/plot-unfolding-machine}{Plot~Unfolding~
 Machine} to use tables 2 and 3.
 \end{DndComment}
 
+\subsubsection{Classic}
+Use the \emph{Classic} scene setup table for a traditional Mythic feel.
+You get interrupt, altered, and unmodified scenes with comparable frequencies
+to the original \href{https://www.wordmillgames.com/mythic-gme.html}{Mythic system}.
 \input{scene_setup_table_1}
 \clearfloat
 \newpage
+
+\subsubsection{Classic with a Twist}
+This scene setup table adds complications and challenges from the
+\href{https://jeansenvaars.itch.io/plot-unfolding-machine}{Plot Unfolding
+Machine} v2 to the Mythic altered and interrupt scenes.
+
+A classic feel with a new twist.
 \input{scene_setup_table_2}
+
+\subsubsection{Narrative}
+This table generates outcomes from Plot Unfolding Machine v3. This is the least
+Mythic-like option. The options here have a narrative feel, putting plot,
+action, characters, and conflict at the forefront.
 \input{scene_setup_table_3}
 
 \clearfloat
 \newpage
 \subsection{Yes or No}
+The Yes/No oracle is used to answer questions about your RPG world, the
+characters, and events within it. Unlike Mythic, the odds of yes or no are not
+altered by the chaos factor.
+
+First determine the odds of success, then roll a d6 and the chaos die. In the
+event that the chaos die is a d6, use different colors to tell the dice apart.
 \input{yes_no_oracle}
 \appendix
 
@@ -240,7 +250,7 @@ the Yes/No oracle, but they are close enough to feel similar in play.
 \end{DndTable}
 
 % Classic table
-\begin{DndTable}[header=Table 1: GTSV Classic (Mythic) Scene Setup]{l c c c c c c c}
+\begin{DndTable}[header=Classic]{l c c c c c c c}
     \textbf{Outcome} & \textbf{d4} & \textbf{d5} & \textbf{d6} & \textbf{d8} & \textbf{d10} & \textbf{d12} & \textbf{d20}\\
     Interrupt        & $50\%$      & $40\%$        & $33\%$      & $25\%$        & $20\%$         & $17\%$         & $10\%$\\
     Altered          & $50\%$      & $40\%$        & $33\%$      & $25\%$        & $20\%$         & $17\%$         & $10\%$\\
@@ -253,27 +263,27 @@ general trend of reduced complications and increased good outcomes is seen as
 chaos moves from high to low.
 
 % Mythic & PUM v2
-\begin{DndTable}[header=Table 2: Mythic \& PUM v2 Scene Setup]{l c c c c c c c}
+\begin{DndTable}[header=Classic with a Twist]{l c c c c c c c}
     \textbf{Outcome}        & \textbf{d4} & \textbf{d5} & \textbf{d6} & \textbf{d8} & \textbf{d10} & \textbf{d12} & \textbf{d20}\\
     Unexpected
-    complication & $25\%$        & $20\%$        & $17\%$        & $12\%$      & $10\%$         & $8\%$         & $5\%$\\
+    complication            & $25\%$        & $20\%$        & $17\%$        & $12\%$      & $10\%$         & $8\%$         & $5\%$\\
     Interrupt               & $25\%$        & $20\%$        & $17\%$        & $12\%$      & $10\%$         & $8\%$         & $5\%$\\
     Altered                 & $25\%$        & $20\%$        & $17\%$        & $12\%$      & $10\%$         & $8\%$         & $5\%$\\
     More
-    challenging        & $25\%$        & $20\%$        & $17\%$        & $12\%$      & $10\%$         & $8\%$         & $5\%$\\
+    challenging             & $25\%$        & $20\%$        & $17\%$        & $12\%$      & $10\%$         & $8\%$         & $5\%$\\
     As expected             & $0\%$         & $20\%$        & $33\%$        & $50\%$      & $60\%$         & $58\%$        & $35\%$\\
     Even better             & $0\%$         & $0\%$         & $0\%$         & $0\%$       & $0\%$          & $8\%$         & $45\%$\\
 \end{DndTable}
 
 % PUM v3
-\begin{DndTable}[header=Table 3: PUM v3 Scene Setup]{l c c c c c c c}
-    \textbf{Outcome}        & \textbf{d4} & \textbf{d5} & \textbf{d6} & \textbf{d8} & \textbf{d10} & \textbf{d12} & \textbf{d20}\\
-    Subject is Revelation   & $25\%$        & $20\%$        & $17\%$        & $12\%$      & $10\%$         & $8\%$         & $5\%$\\
-    Consider Circumstance   & $25\%$        & $20\%$        & $17\%$        & $12\%$      & $10\%$         & $8\%$         & $5\%$\\
-    The area is Describe    & $25\%$        & $20\%$        & $17\%$        & $12\%$      & $10\%$         & $8\%$         & $5\%$\\
-    Who shows up, \& Intent & $25\%$        & $20\%$        & $17\%$        & $12\%$      & $10\%$         & $8\%$         & $5\%$\\
-    As expected             & $0\%$         & $20\%$        & $33\%$        & $50\%$      & $60\%$         & $58\%$        & $35\%$\\
-    And also Goal           & $0\%$         & $0\%$         & $0\%$         & $0\%$       & $0\%$          & $8\%$         & $45\%$\\
+\begin{DndTable}[header=Narrative]{l c c c c c c c}
+    \textbf{Outcome}                            & \textbf{d4} & \textbf{d5} & \textbf{d6} & \textbf{d8} & \textbf{d10} & \textbf{d12} & \textbf{d20}\\
+    \textbf{Subject} is \textbf{Revelation}     & $25\%$        & $20\%$        & $17\%$        & $12\%$      & $10\%$         & $8\%$         & $5\%$\\
+    Consider \textbf{Circumstance}              & $25\%$        & $20\%$        & $17\%$        & $12\%$      & $10\%$         & $8\%$         & $5\%$\\
+    The area is \textbf{Describe}               & $25\%$        & $20\%$        & $17\%$        & $12\%$      & $10\%$         & $8\%$         & $5\%$\\
+    \textbf{Who} shows up, \& \textbf{Intent}   & $25\%$        & $20\%$        & $17\%$        & $12\%$      & $10\%$         & $8\%$         & $5\%$\\
+    As expected                                 & $0\%$         & $20\%$        & $33\%$        & $50\%$      & $60\%$         & $58\%$        & $35\%$\\
+    And also \textbf{Goal}                      & $0\%$         & $0\%$         & $0\%$         & $0\%$       & $0\%$          & $8\%$         & $45\%$\\
 \end{DndTable}
 
 %----------------------------------------------------------------------------------
