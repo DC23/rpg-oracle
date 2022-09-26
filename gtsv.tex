@@ -114,8 +114,6 @@ Mythic-like option. The options here have a narrative feel, putting plot,
 action, characters, and conflict at the forefront.
 \input{scene_setup_table_3}
 
-\clearfloat
-\newpage
 \subsection{Yes or No}
 The Yes/No oracle is used to answer questions about your RPG world, the
 characters, and events within it. Unlike Mythic, the odds of yes or no are not
@@ -123,7 +121,33 @@ altered by the chaos factor.
 
 First determine the odds of success, then roll a d6 and the chaos die. In the
 event that the chaos die is a d6, use different colors to tell the dice apart.
+
+\subsubsection{Standard Oracle}
 \input{yes_no_oracle}
+
+\subsubsection{Deceptive Oracle}
+Nearly identical to the standard oracle, this version gives an ambiguous or
+deceptive answer when a 4 is rolled on the chaos die.
+
+An ambiguous result means you should treat whatever answer you receive as
+unclear or uncertain. Your character may not have enough information to know the
+answer, or you may need to ask again later when more events have transpired.
+Alternately, you might introduce a skill check or challenge to have the character
+learn the answer in-game.
+
+A deceptive result means the answer you obtained will somehow appear in the game
+as its opposite. If you ask "Is the chest trapped?" and get a deceptive
+no, then it may mean the chest appears to be trapped when inspected, but the
+trap has malfunctioned and may as well not be there. A deceptive yes to "Is it
+raining?" might mean it isn't raining now, but a sudden storm will appear very soon.
+
+\begin{DndComment}{}
+If you can't think of an ambiguous or deceptive result right away, then feel free
+to ignore it, and treat your answer as unmodified.
+\end{DndComment}
+
+\input{deceptive_qualifiers}
+
 \appendix
 
 %----------------------------------------------------------------------------------
@@ -217,12 +241,27 @@ is very similar between Mythic and GTSV.
     Exceptional \& Random   & $ 6\%$           & $ 5\%$              & $ 4\%$                & $ 3\%$  \\
 \end{DndTable}
 
-\begin{DndTable}[header=GTSV]{l c c c c c c c}
+\begin{DndTable}[header=GTSV Standard]{l c c c c c c c}
     \textbf{Modifier} & \textbf{d4} & \textbf{d5} & \textbf{d6} & \textbf{d8} & \textbf{d10} & \textbf{d12} & \textbf{d20}\\
     Unmodified              & $25\%$      & $40\%$       & $50\%$       & $62\%$       & $70\%$        & $75\%$        & $85\%$\\
     Exceptional             & $25\%$      & $20\%$       & $17\%$       & $12\%$       & $10\%$        & $ 8\%$        & $ 5\%$\\
     And ...                 & $25\%$      & $20\%$       & $17\%$       & $12\%$       & $10\%$        & $8\%$         & $5\%$\\
     But ...                 & $25\%$      & $20\%$       & $17\%$       & $12\%$       & $10\%$        & $8\%$         & $5\%$\\
+    Total Random Event Chance& $17\%$      & $17\%$       & $17\%$       & $12\%$       & $10\%$        & $8\%$         & $5\%$\\
+    Random \& Exceptional   & $ 4\%$      & $ 3\%$       & $ 3\%$       & $ 2\%$       & $ 2\%$        & $1\%$         & $1\%$\\
+    Random \&~And...        & $ 4\%$      & $ 3\%$       & $ 3\%$       & $ 2\%$       & $ 2\%$        & $1\%$         & $1\%$\\
+    Random \&~But...        & $ 4\%$      & $ 3\%$       & $ 3\%$       & $ 2\%$       & $ 2\%$        & $1\%$         & $1\%$\\
+    Random \&~Unmodified    & $ 4\%$      & $ 7\%$       & $ 8\%$       & $ 6\%$       & $ 5\%$        & $4\%$         & $2\%$\\
+\end{DndTable}
+
+\begin{DndTable}[header=GTSV Deceptive]{l c c c c c c c}
+    \textbf{Modifier} & \textbf{d4} & \textbf{d5} & \textbf{d6} & \textbf{d8} & \textbf{d10} & \textbf{d12} & \textbf{d20}\\
+    Unmodified              & $ 0\%$      & $20\%$       & $33\%$       & $50\%$       & $60\%$        & $67\%$        & $80\%$\\
+    Exceptional             & $25\%$      & $20\%$       & $17\%$       & $12\%$       & $10\%$        & $ 8\%$        & $ 5\%$\\
+    And ...                 & $25\%$      & $20\%$       & $17\%$       & $12\%$       & $10\%$        & $8\%$         & $5\%$\\
+    But ...                 & $25\%$      & $20\%$       & $17\%$       & $12\%$       & $10\%$        & $8\%$         & $5\%$\\
+    Deceptive               & $12\%$      & $10\%$       & $ 8\%$       & $ 6\%$       & $ 5\%$        & $4\%$         & $2\%$\\
+    Ambiguous               & $12\%$      & $10\%$       & $ 8\%$       & $ 6\%$       & $ 5\%$        & $4\%$         & $2\%$\\
     Total Random Event Chance& $17\%$      & $17\%$       & $17\%$       & $12\%$       & $10\%$        & $8\%$         & $5\%$\\
     Random \& Exceptional   & $ 4\%$      & $ 3\%$       & $ 3\%$       & $ 2\%$       & $ 2\%$        & $1\%$         & $1\%$\\
     Random \&~And...        & $ 4\%$      & $ 3\%$       & $ 3\%$       & $ 2\%$       & $ 2\%$        & $1\%$         & $1\%$\\
