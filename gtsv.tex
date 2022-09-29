@@ -48,32 +48,21 @@ plenty of things happening.
 
 I also like some ideas in the excellent
 \href{https://jeansenvaars.itch.io/plot-unfolding-machine}{Plot~Unfolding~
-Machine} (PUM), so I have incorporated a few of those here, but in a way that
-only works for people who also have a copy of PUM. My tables direct you to look
-up additional results in the PUM tables. These are all optional, so this system
-can work without PUM as well. Just don't use those optional scene alteration
-tables (tables 2 and 3).
-
-For scene setup, which PUM wonderfully calls \emph{Expectation Checking}, both
-Mythic and MCSV stick with the options of \emph{interrupt scenes}, \emph{altered
-scenes}, and \emph{as expected}. PUM adds a number of other interesting outcomes
-which I have drawn on to add three different scene setup tables. You will need a
-copy of PUM to fully use those tables
+Machine} (PUM), so I have incorporated a few of those here in optional tables.
+You need your own copy of PUM to use these, as my tables direct you to look
+up additional results in PUM. These are all optional, so this system
+can work without PUM as well. Just don't use the optional scene alteration
+tables.
 
 In the spirit of Morning Coffee Solo Variations, I have called this mashup the
 \emph{Ginger Tea Solo Variations} (GTSV), since I was drinking ginger tea at
 least some of the time while working on this.
 
 %----------------------------------------------------------------------------------
-% Section: Oracles
-%----------------------------------------------------------------------------------
-\section{Oracles}
 \subsection{Chaos Factor}
 The Chaos Factor table and mechanic is from
 \href{https://aleaiactandaest.blogspot.com/p/downloads.html}{Morning Coffee Solo
-Variations}.
-
-Generally speaking, high chaos (here represented by a smaller die) means things
+Variations}. Generally speaking, high chaos (here represented by a smaller die) means things
 are going badly for your PC. Low chaos means things are going well.
 
 In this system, the chaos factor influences the likelihood of scenes running as
@@ -82,26 +71,37 @@ questions. Unlike Mythic, it does not change the likelihood of getting a yes or
 a no.
 
 If you are just starting an adventure and don't know what the chaos level is,
-then \emph{Average (d10)} is a reasonable starting value.
+then \emph{Average (d10)} is a good choice.
 
 \input{chaos_die_table}
 
 \subsection{Scene Setup}
-After setting up your scene, roll the chaos die against one of these tables to
-test your expectations.
+After setting up your scene, roll the chaos die against this table to test your
+expectations. This table generates interrupt, altered, and unmodified scenes
+with comparable frequencies to the original
+\href{https://www.wordmillgames.com/mythic-gme.html}{Mythic system}.
+\input{scene_setup_table_1}
+
+\section{Oracles}
+\subsection{Yes or No}
+The Yes/No oracle is used to answer questions about your RPG world, the
+characters, and events within it. Unlike Mythic, the odds of yes or no are not
+altered by the chaos factor.
+
+First determine the odds of success, then roll a d6 and the chaos die. In the
+event that the chaos die is a d6, use different colors to tell the dice apart.
+
+\subsubsection{Standard Oracle}
+\input{yes_no_oracle}
+
+\section{Optional Tables}
+\subsection{Scene Setup}
+
 \begin{DndComment}{}
 You will need a copy of the
 \href{https://jeansenvaars.itch.io/plot-unfolding-machine}{Plot~Unfolding~
-Machine} to use the \emph{Twist} and \emph{Narrative} tables.
+Machine} to use these optional scene setup tables.
 \end{DndComment}
-
-\subsubsection{Classic}
-Use the \emph{Classic} scene setup table for a traditional Mythic feel.
-You get interrupt, altered, and unmodified scenes with comparable frequencies
-to the original \href{https://www.wordmillgames.com/mythic-gme.html}{Mythic system}.
-\input{scene_setup_table_1}
-\clearfloat
-\newpage
 
 \subsubsection{Classic with a Twist}
 This scene setup table adds complications and challenges from the
@@ -117,17 +117,6 @@ Mythic-like option. The options here have a narrative feel, putting plot,
 action, characters, and conflict at the forefront.
 \input{scene_setup_table_3}
 
-\subsection{Yes or No}
-The Yes/No oracle is used to answer questions about your RPG world, the
-characters, and events within it. Unlike Mythic, the odds of yes or no are not
-altered by the chaos factor.
-
-First determine the odds of success, then roll a d6 and the chaos die. In the
-event that the chaos die is a d6, use different colors to tell the dice apart.
-
-\subsubsection{Standard Oracle}
-\input{yes_no_oracle}
-
 \appendix
 
 %----------------------------------------------------------------------------------
@@ -138,8 +127,8 @@ event that the chaos die is a d6, use different colors to tell the dice apart.
 \section{Yes/No Oracle}
 \subsection{Chance of a Yes}
 These tables show that within the range of \emph{doubtful} to \emph{certain}
-(Mythic \emph{very unlikely} to \emph{likely}), the GTSV Yes/No oracle has
-roughly similar outcomes.
+(Mythic \emph{very unlikely} to \emph{likely}), the MCSV and GTSV Yes/No oracles
+have roughly chances of a \emph{Yes} result as the Mythic Variations 2 Fate Check.
 
 \begin{multicols}{2}
 \clearfloat
@@ -180,11 +169,6 @@ roughly similar outcomes.
 \end{multicols}
 
 \subsection{Chance of a Modifier}
-Note that the current version of GTSV gives much higher chances of oracle
-modifiers. Also note that in GTSV, random events can occur independently of
-other modifiers, further increasing the chance that something other than a
-straight yes or no answer will be obtained.
-
 In all tables the highest chaos factor is on the left, decreasing towards the
 lowest setting on the right.
 
