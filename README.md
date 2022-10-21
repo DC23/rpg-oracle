@@ -19,17 +19,8 @@ and Yes/No questions use fixed numbers for each result. This makes the outcomes
 easier to remember. However, MCSV just gives the *and ...*, *but ...*,
 and *random event* modifiers for Yes/No questions. I always liked the
 *exceptional* results in Mythic, so I have modified the qualification table to
-add *exceptional* as an option.
-
-So here I have mashed up some ideas from Mythic, MCSV, and the excellent [Plot
-Unfolding Machine](https://jeansenvaars.itch.io/plot-unfolding-machine) (PUM),
-hopefully without infringing on the intellectual property of any of those.
-
-For scene setup, which PUM wonderfully calls *Expectation Checking*, both Mythic
-and MCSV stick with the options of *interrupt scenes*, *altered scenes*, and *as
-expected*. PUM adds a number of other interesting outcomes which I have drawn on
-to add three different scene setup tables. You will need a copy of PUM to use
-the PUM v3 table.
+add *exceptional* as an option. I also reduced the odds of an oracle modifier,
+bringing them closer to those in Mythic.
 
 ## Getting The Files
 
