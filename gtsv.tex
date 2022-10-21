@@ -10,8 +10,6 @@
 %----------------------------------------------------------------------------------
 \begin{document}
 \frontmatter
-% \maketitle
-% \tableofcontents
 
 %----------------------------------------------------------------------------------
 % Main Content
@@ -41,18 +39,11 @@ result. This makes the outcomes easier to remember. However, MCSV just gives the
 questions. I always liked the \emph{exceptional} results in Mythic, so I have
 modified the qualification table to add \emph{exceptional} as an option.
 
-Additionally, the probabilities of \emph{and ...} and \emph{but ...}
-modifiers in MCSV are much higher than I like. In this system they occur half
-as often, but combined with the \emph{exceptional} result, there are still
-plenty of things happening.
-
-I also like some ideas in the excellent
-\href{https://jeansenvaars.itch.io/plot-unfolding-machine}{Plot~Unfolding~
-Machine} (PUM), so I have incorporated a few of those here in optional tables.
-You need your own copy of PUM to use these, as my tables direct you to look
-up additional results in PUM. These are all optional, so this system
-can work without PUM as well. Just don't use the optional scene alteration
-tables.
+Additionally, the probabilities of \emph{and ...} and \emph{but ...} modifiers
+in MCSV are much higher than I like. In this system they occur half as often,
+but combined with the \emph{exceptional} result, there are still plenty of
+things happening. The changes also bring the odds closer to those of the Mythic
+system.
 
 In the spirit of Morning Coffee Solo Variations, I have called this mashup the
 \emph{Ginger Tea Solo Variations} (GTSV), since I was drinking ginger tea at
@@ -68,11 +59,12 @@ are going badly for your PC. Low chaos means things are going well.
 In this system, the chaos factor influences the likelihood of scenes running as
 planned, as well as the likelihood of modifiers and random events on Yes/No
 questions. Unlike Mythic, it does not change the likelihood of getting a yes or
-a no.
+a no when asking an oracle question.
 
 If you are just starting an adventure and don't know what the chaos level is,
 then \emph{Average (d10)} is a good choice.
 
+\vfill\pagebreak
 \input{chaos_die_table}
 
 \subsection{Scene Setup}
@@ -82,8 +74,7 @@ with comparable frequencies to the original
 \href{https://www.wordmillgames.com/mythic-gme.html}{Mythic system}.
 \input{scene_setup_table_1}
 
-\section{Oracles}
-\subsection{Yes or No}
+\section{Oracle}
 The Yes/No oracle is used to answer questions about your RPG world, the
 characters, and events within it. Unlike Mythic, the odds of yes or no are not
 altered by the chaos factor.
@@ -91,37 +82,13 @@ altered by the chaos factor.
 First determine the odds of success, then roll a d6 and the chaos die. In the
 event that the chaos die is a d6, use different colors to tell the dice apart.
 
-\subsubsection{Standard Oracle}
 \begin{DndComment}{}
 When using the \emph{Has to be} and \emph{Impossible} odds, you roll with
 advantage or disadvantage. Discard the appropriate die \textbf\emph{{before}}
 checking for random events.
 \end{DndComment}
 \input{yes_no_oracle}
-
-\section{Optional Tables}
-\subsection{Scene Setup}
-
-\begin{DndComment}{}
-You will need a copy of the
-\href{https://jeansenvaars.itch.io/plot-unfolding-machine}{Plot~Unfolding~
-Machine} to use these optional scene setup tables.
-\end{DndComment}
-
-\subsubsection{Classic with a Twist}
-This scene setup table adds complications and challenges from the
-\href{https://jeansenvaars.itch.io/plot-unfolding-machine}{Plot Unfolding
-Machine} v2 to the Mythic altered and interrupt scenes.
-
-A classic feel with a new twist.
-\input{scene_setup_table_2}
-
-\subsubsection{Narrative}
-This table generates outcomes from Plot Unfolding Machine v3. This is the least
-Mythic-like option. The options here have a narrative feel, putting plot,
-action, characters, and conflict at the forefront.
-\input{scene_setup_table_3}
-
+\vfill
 \appendix
 
 %----------------------------------------------------------------------------------
@@ -205,6 +172,7 @@ is very similar between Mythic and GTSV.
     \end{itemize}
 \end{DndComment}
 
+\pagebreak
 
 \begin{DndTable}[header=\emph{Mythic Variations 2 Fate Check}]{l c c c c}
     \textbf{Modifier} & \textbf{Chaos 6} & \textbf{Chaos 5} & \textbf{Chaos 4} & \textbf{Chaos 3}\\
@@ -252,35 +220,6 @@ the Yes/No oracle, but they are close enough to feel similar in play.
     Interrupt        & $50\%$      & $40\%$        & $33\%$      & $25\%$        & $20\%$         & $17\%$         & $10\%$\\
     Altered          & $50\%$      & $40\%$        & $33\%$      & $25\%$        & $20\%$         & $17\%$         & $10\%$\\
     Unmodified       & $0\%$       & $20\%$        & $33\%$      & $50\%$        & $60\%$         & $67\%$         & $80\%$\\
-\end{DndTable}
-
-The following two tables can't really be compared to the previous results, since
-the number of possible scene variation outcomes is much larger. However, the
-general trend of reduced complications and increased good outcomes is seen as
-chaos moves from high to low.
-
-% Mythic & PUM v2
-\begin{DndTable}[header=Classic with a Twist]{l c c c c c c c}
-    \textbf{Outcome}        & \textbf{d4} & \textbf{d5} & \textbf{d6} & \textbf{d8} & \textbf{d10} & \textbf{d12} & \textbf{d20}\\
-    Unexpected
-    complication            & $25\%$        & $20\%$        & $17\%$        & $12\%$      & $10\%$         & $8\%$         & $5\%$\\
-    Interrupt               & $25\%$        & $20\%$        & $17\%$        & $12\%$      & $10\%$         & $8\%$         & $5\%$\\
-    Altered                 & $25\%$        & $20\%$        & $17\%$        & $12\%$      & $10\%$         & $8\%$         & $5\%$\\
-    More
-    challenging             & $25\%$        & $20\%$        & $17\%$        & $12\%$      & $10\%$         & $8\%$         & $5\%$\\
-    As expected             & $0\%$         & $20\%$        & $33\%$        & $50\%$      & $60\%$         & $58\%$        & $35\%$\\
-    Even better             & $0\%$         & $0\%$         & $0\%$         & $0\%$       & $0\%$          & $8\%$         & $45\%$\\
-\end{DndTable}
-
-% PUM v3
-\begin{DndTable}[header=Narrative]{l c c c c c c c}
-    \textbf{Outcome}                            & \textbf{d4} & \textbf{d5} & \textbf{d6} & \textbf{d8} & \textbf{d10} & \textbf{d12} & \textbf{d20}\\
-    \textbf{Subject} is \textbf{Revelation}     & $25\%$        & $20\%$        & $17\%$        & $12\%$      & $10\%$         & $8\%$         & $5\%$\\
-    Consider \textbf{Circumstance}              & $25\%$        & $20\%$        & $17\%$        & $12\%$      & $10\%$         & $8\%$         & $5\%$\\
-    The area is \textbf{Describe}               & $25\%$        & $20\%$        & $17\%$        & $12\%$      & $10\%$         & $8\%$         & $5\%$\\
-    \textbf{Who} shows up, \& \textbf{Intent}   & $25\%$        & $20\%$        & $17\%$        & $12\%$      & $10\%$         & $8\%$         & $5\%$\\
-    As expected                                 & $0\%$         & $20\%$        & $33\%$        & $50\%$      & $60\%$         & $58\%$        & $35\%$\\
-    And also \textbf{Goal}                      & $0\%$         & $0\%$         & $0\%$         & $0\%$       & $0\%$          & $8\%$         & $45\%$\\
 \end{DndTable}
 
 %----------------------------------------------------------------------------------
