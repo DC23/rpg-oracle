@@ -87,7 +87,15 @@ advantage or disadvantage. Discard the die \textbf\emph{{before}}
 checking for random events.
 \end{DndComment}
 \input{yes_no_oracle}
+
 \vfill
+\pagebreak
+
+This is an optional table for qualifiers. It retains the original MCSV modifier
+frequencies.
+\input{yes_no_oracle_more_mods}
+\vfill
+
 \appendix
 
 %----------------------------------------------------------------------------------
@@ -147,9 +155,19 @@ have roughly chances of a \emph{Yes} result as the Mythic Variations 2 Fate Chec
 In all tables the highest chaos factor is on the left, decreasing towards the
 lowest setting on the right.
 
-As with the chance of a yes, the chance of answer modification within the range of
-\emph{doubtful} to \emph{certain} (Mythic \emph{very unlikely} to \emph{likely})
-is very similar between Mythic and GTSV.
+As with the chance of a yes, the chance of getting an exceptional or unmodified result
+is very similar between Mythic and GTSV across all comparable chaos levels. The chance of a
+random event is slightly lower in GTSV.
+
+Note that when comparing the modifier probabilities, the approximate match between
+\emph{Mythic Variations II} chaos factors and GTSV chaos is:
+\begin{DndTable}[header=Equivalent Chaos Factors]{ XXX }
+    \textbf{Chaos Level} & \textbf{Mythic Fate Check} & \textbf{GTSV} \\
+    Under Control & 3 & d12 \\
+    Average & 4 & d10 \\
+    Out of Control & 5 & d8 \\
+    Madness & 6 & d6
+\end{DndTable}
 
 \begin{DndComment}{A Note on Column Totals}
     In these tables, adding all percentages in a column should total to 100\%
@@ -162,34 +180,31 @@ is very similar between Mythic and GTSV.
         odds. For example there is a $1/48$ chance of a \emph{random \&
         exceptional} outcome with chaos die d8.
         \item In MCSV and GTSV, random events occur independently of other outcomes.
-        The chance of the four main outcomes totals $100\%$ while the random events
+        The chance of the main outcomes totals $100\%$ while the random events
         have their own separate pool. They occur or not in combination with one of
-        the four main outcomes.
-        \item The \emph{Total Random Event Chance} in the GTSV table is the
+        the main outcomes.
+        \item The \emph{Random} chance in the GTSV table is the
         total chance of any random event happening at all. This is the sum of
         all the separate random event combinations.
     \end{itemize}
 \end{DndComment}
 
+\vfill
 \pagebreak
 
 \begin{DndTable}[header=\emph{Mythic Variations 2 Fate Check}]{l c c c c}
     \textbf{Modifier} & \textbf{Chaos 6} & \textbf{Chaos 5} & \textbf{Chaos 4} & \textbf{Chaos 3}\\
     Unmodified              & $ 64\%$          & $ 70\%$             & $ 76\%$               & $ 82\%$  \\
     Exceptional             & $15\%$           & $ 12\%$             & $ 10\%$               & $  8\%$  \\
-    Random \& Unmodified    & $15\%$           & $ 12\%$             & $ 10\%$               & $  8\%$  \\
-    Exceptional \& Random   & $ 6\%$           & $ 5\%$              & $ 4\%$                & $ 3\%$  \\
+    Random                  & $21\%$           & $ 18\%$             & $ 14\%$               & $ 12\%$
 \end{DndTable}
 
 \begin{DndTable}[header=GTSV]{ lccccccc }
     \textbf{Modifier} & \textbf{d4} & \textbf{d5} & \textbf{d6} & \textbf{d8} & \textbf{d10} & \textbf{d12} & \textbf{d20}\\
     Unmodified              & $50\%$      & $60\%$       & $67\%$       & $75\%$       & $80\%$        & $83\%$        & $90\%$\\
     Exceptional             & $25\%$      & $20\%$       & $17\%$       & $12\%$       & $10\%$        & $8\%$         & $5\%$\\
-    But ...                 & $25\%$      & $20\%$       & $17\%$       & $12\%$       & $10\%$        & $8\%$         & $5\%$\\
-    Total Random Event Chance& $17\%$     & $17\%$       & $17\%$       & $12\%$       & $10\%$        & $8\%$         & $5\%$\\
-    Random \& Exceptional   & $ 4\%$      & $ 3\%$       & $ 3\%$       & $ 2\%$       & $ 2\%$        & $1\%$         & $1\%$\\
-    Random \&~But...        & $ 4\%$      & $ 3\%$       & $ 3\%$       & $ 2\%$       & $ 2\%$        & $1\%$         & $1\%$\\
-    Random \&~Unmodified    & $ 8\%$      & $ 10\%$      & $ 11\%$      & $ 8\%$       & $ 7\%$        & $6\%$         & $3\%$\\
+    But \ldots              & $25\%$      & $20\%$       & $17\%$       & $12\%$       & $10\%$        & $8\%$         & $5\%$\\
+    Random                  & $17\%$      & $17\%$       & $17\%$       & $12\%$       & $10\%$        & $8\%$         & $5\%$
 \end{DndTable}
 
 \section{Scene Setup}
