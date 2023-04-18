@@ -9,6 +9,7 @@
 % Front
 %----------------------------------------------------------------------------------
 \begin{document}
+\onecolumn
 \frontmatter{}
 
 %----------------------------------------------------------------------------------
@@ -20,6 +21,7 @@
 %----------------------------------------------------------------------------------
 % Section: Introduction
 %----------------------------------------------------------------------------------
+
 \section{Introduction}
 \DndDropCapLine{I}{have used the
 \href{https://www.wordmillgames.com/mythic-gme.html}{Mythic}}
@@ -51,6 +53,9 @@ In the spirit of Morning Coffee Solo Variations, I have called this mashup the
 least some of the time while working on this.
 
 %----------------------------------------------------------------------------------
+\begin{multicols}{2}
+\clearfloat{}
+
 \subsection{Chaos Factor}
 Generally speaking, high chaos (here represented by a smaller die) means things
 are going badly for your PC\@. Low chaos means things are going well.
@@ -63,7 +68,7 @@ a no when asking an oracle question.
 If you are just starting an adventure and don't know what the chaos level is,
 then \emph{Average (d10)} is a good choice.
 
-\vfill\pagebreak
+% \vfill\pagebreak
 \input{chaos_die_table}
 
 \subsection{Scene Setup}
@@ -73,7 +78,7 @@ with comparable frequencies to the original
 \href{https://www.wordmillgames.com/mythic-gme.html}{Mythic system}.
 \input{scene_setup_table}
 
-\section{Oracle}
+\subsection{Oracle}
 The Yes/No oracle is used to answer questions about your RPG world, the
 characters, and events within it. Unlike Mythic, the odds of yes or no are not
 altered by the chaos factor.
@@ -83,18 +88,18 @@ event that the chaos die is a d6, use different colors to tell the dice apart.
 
 \begin{DndComment}{}
 When using the \emph{Has to be} and \emph{Impossible} odds, you roll with
-advantage or disadvantage. Discard the die \textbf\emph{{before}}
-checking for random events.
+advantage or disadvantage. Discard the die before checking for random events.
 \end{DndComment}
 \input{yes_no_oracle}
 
 \vfill
-\pagebreak
+% \pagebreak
 
-This is an optional table for qualifiers. It retains the original MCSV modifier
-frequencies.
-\input{yes_no_oracle_more_mods}
-\vfill
+% This is an optional table for qualifiers. It retains the original MCSV modifier
+% frequencies.
+% \input{yes_no_oracle_more_mods}
+% \vfill
+\end{multicols}
 
 \appendix
 
