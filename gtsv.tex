@@ -9,12 +9,12 @@
 % Front
 %----------------------------------------------------------------------------------
 \begin{document}
-\frontmatter
+\frontmatter{}
 
 %----------------------------------------------------------------------------------
 % Main Content
 %----------------------------------------------------------------------------------
-\mainmatter
+\mainmatter{}
 
 \chapter*{Ginger Tea Solo Variations \version}
 %----------------------------------------------------------------------------------
@@ -53,7 +53,7 @@ least some of the time while working on this.
 %----------------------------------------------------------------------------------
 \subsection{Chaos Factor}
 Generally speaking, high chaos (here represented by a smaller die) means things
-are going badly for your PC. Low chaos means things are going well.
+are going badly for your PC\@. Low chaos means things are going well.
 
 In this system, the chaos factor influences the likelihood of scenes running as
 planned, as well as the likelihood of modifiers and random events on Yes/No
@@ -105,51 +105,26 @@ frequencies.
 \chapter{Probabilities}
 \section{Yes/No Oracle}
 \subsection{Chance of a Yes}
-These tables show that within the range of \emph{doubtful} to \emph{certain}
-(Mythic \emph{very unlikely} to \emph{likely}), the MCSV and GTSV Yes/No oracles
-have roughly chances of a \emph{Yes} result as the Mythic Variations 2 Fate Check.
+This table shows that the GTSV Yes/No oracle has roughly the same chances of a
+\emph{Yes} result as the Mythic Variations 2 Fate Check for the same named odds.
 
-\begin{multicols}{2}
-\clearfloat
-\vspace*{\fill}
-% Mythic
-\begin{DndTable}[header=\emph{Mythic Variations 2 Fate Check}\\at Chaos Factor 5]{X c}
-    \textbf{Odds} & \textbf{Chance of Yes} \\
-    Impossible & $3\%$ \\
-    No way & $10\%$ \\
-    Very unlikely & $21\%$\\
-    Unlikely & $36\%$\\
-    Unsure & $55\%$\\
-    Likely & $72\%$\\
-    Very likely & $85\%$\\
-    Sure thing & $94\%$\\
-    Has to be & $99\%$
+\begin{DndTable}[header=\emph{Chance of a Yes} at Chaos Factor 5]{XXX}
+    \textbf{Odds} & \textbf{Mythic Variations Fate Check} & \textbf{MCSV} \\
+    Impossible & $3\%$ & $3\%$ \\
+    No way & $10\%$ & --- \\
+    Very unlikely & $21\%$ & $17\%$ \\
+    Unlikely & $36\%$ & $33\%$ \\
+    Unsure & $55\%$ & $50\%$ \\
+    Likely & $72\%$ & $67\%$ \\
+    Very likely & $85\%$ & $83\%$ \\
+    Sure thing & $94\%$ & --- \\
+    Has to be & $99\%$ & $97\%$
 \end{DndTable}
 
-% GTSV
-\begin{DndTable}[header=GTSV]{X c}
-    \textbf{Odds} & \textbf{Chance of Yes} \\
-    Impossible & $3\%$ \\
-    Doubtful & $17\%$ \\
-    Unlikely & $33\%$ \\
-    Unsure & $50\%$ \\
-    Likely & $67\%$ \\
-    Certain & $83\%$ \\
-    Has to be & $97\%$
-\end{DndTable}
+% \begin{multicols}{2}
+% \clearfloat{}
 
-% Closest Named Probabilities
-\begin{DndTable}[header=Closest Equivalent Named Probabilities]{X l}
-    \textbf{Mythic Fate Check} & \textbf{GTSV} \\
-    Impossible ($3\%$) & Impossible ($3\%$)\\
-    Very unlikely ($21\%$)& Doubtful ($17\%$)\\
-    Unlikely ($36\%$) & Unlikely ($33\%$)\\
-    Unsure ($55\%$) & Unsure ($50\%$)\\
-    Likely ($72\%$) & Likely ($67\%$)\\
-    Very likely ($85\%$) & Certain ($83\%$)\\
-    Has to be ($99\%$) & Has to be ($97\%$)
-\end{DndTable}
-\end{multicols}
+% \end{multicols}
 
 \subsection{Chance of a Modifier}
 In all tables the highest chaos factor is on the left, decreasing towards the
@@ -157,7 +132,7 @@ lowest setting on the right.
 
 As with the chance of a yes, the chance of getting an exceptional or unmodified result
 is very similar between Mythic and GTSV across all comparable chaos levels. The chance of a
-random event is slightly lower in GTSV.
+random event is slightly lower in GTSV\@.
 
 Note that when comparing the modifier probabilities, the approximate match between
 \emph{Mythic Variations II} chaos factors and GTSV chaos is:
@@ -170,7 +145,7 @@ Note that when comparing the modifier probabilities, the approximate match betwe
 \end{DndTable}
 
 \begin{DndComment}{A Note on Column Totals}
-    In these tables, adding all percentages in a column should total to 100\%
+    In the following tables, adding all percentages in a column should total to 100\%
     since this is the total chance of anything happening at all. In some cases
     it may appear that the total is not 100\%. There are a few reasons for this:
     \begin{itemize}
@@ -215,7 +190,7 @@ Check}. In this system, the chaos factor only varies between 3 and 6.
 
 Once again, within the range of \emph{doubtful} to \emph{certain} (Mythic
 \emph{very unlikely} to \emph{likely}), the chances of scene alterations are
-roughly similar when comparing Mythic and GTSV. They are not as close as with
+roughly similar when comparing Mythic and GTSV\@. They are not as close as with
 the Yes/No oracle, but they are close enough to feel similar in play.
 
 % Mythic odds
@@ -237,6 +212,6 @@ the Yes/No oracle, but they are close enough to feel similar in play.
 %----------------------------------------------------------------------------------
 % Back
 %----------------------------------------------------------------------------------
-\backmatter
+\backmatter{}
 
 \end{document}
