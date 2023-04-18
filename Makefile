@@ -43,8 +43,8 @@ letter_print: $(TEX_FILES)
 	$(ESSENTIAL_LETTER_PRINT_CMD)
 	$(ESSENTIAL_LETTER_PRINT_CMD)
 
-preview: gtsv_letter.pdf
-	pdftoppm -jpeg -rx 120 -ry 120 -f 1 -l 1 gtsv_letter.pdf preview
+preview: gtsv_a4.pdf
+	pdftoppm -jpeg -rx 120 -ry 120 -f 1 -l 1 gtsv_a4.pdf preview
 	mv preview-1.jpg preview.jpg
 
 .PHONY: clean
